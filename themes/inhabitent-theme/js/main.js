@@ -2,10 +2,10 @@ $(function(){
   
 //Opens search bar once search icon has been clicked
   $('body').on('click', function(event){
-    
+    console.log(event.target);
     var searchBar = $('input[type="search"]');
 
-    if ($(event.target).parents().hasClass("search-submit")){
+    if ($(event.target).parents().hasClass("search-form")){
       event.preventDefault();
       searchBar.show('slow');
       searchBar.focus(); //check if button was clicked

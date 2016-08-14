@@ -4,7 +4,7 @@
 
   <div id="primary" class="content-area">
     <main id="main" class="wrapper site-main" role="main">
-    
+    <?php get_sidebar(); ?>
 
     <?php if ( have_posts() ) : ?>
 
