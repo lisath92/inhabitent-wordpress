@@ -2,73 +2,130 @@
 # Content
 --------------------------------------------------------------*/
 
-/* Posts and pages */
-
-.sticky {
-	display: block;
-}
-
-.hentry {
-	margin: 0 0 $base__space-unit;
-}
-
-.updated:not(.published){
-	display: none;
-}
-
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: $base__space-unit 0 0;
-}
-
-.page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
-}
-
-/* Asides */
-
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-	display: none;
-}
-
-/* Comments */
-
-.comment-content a {
-	word-wrap: break-word;
-}
-.bypostauthor {
-	display: block;
-}
-
-
+/*Body*/
 body {
+	font-family: Merriweather;
+	font-size: 16px;
+	line-height: 1.75;
 	color: $color__text-main;
 }
 
-/*Header*/
+.wrapper{
+	width: 1120px;
+	margin:0 auto;
+}
 
-.main-navigation{
-	background-color: rgba(255,255,255,0.5);
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	position: fixed;
-	z-index: 100;
-	top: 32px;//to display on screen with admin bar
-	height: 45px;
+
+/*Fixed Header*/
+.site-header{
+	background-color: rgba(255,255,255,0.7);
 	border-bottom: 1px $color__brand-lightgray solid;
-	text-align: center;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 2;
+	
+	.main-navigation {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		height: 45px;
+		text-transform: uppercase;
+		font-family: Novecento Sans;
+		text-align: left;
+	}
+	
+	.tent-logo {
+		margin-right: auto;
+
+		a {
+			width: 50px;
+		}
+	}
+
+	button{
+		border: 0;
+	}
 
 	a {
 		width: 80px;
 		color: $color__brand;
 	}
 }
+
+/*Back-end User Fixed Header*/
+.logged-in {
+	.site-header{
+		top: 32px;
+	}
+	.site-main{
+		margin-top: 32px;
+	}
+}
+
+/*Footer*/
+.site-footer{
+	background:
+	url('../../assets/images/dark-wood2x.png');
+	width:100%;
+	height: 300px;
+
+	.wrapper{
+		display: flex;
+		justify-content: space-between;
+
+		a img{
+			padding-top: 80px;
+			width: 70%;
+		}
+		.site-info {
+			padding-top: 40px;
+			line-height: 1.25;
+			color: white;
+
+			h1 {
+				text-transform: uppercase;
+				font-size: 20px;
+				letter-spacing: 2px;
+				color: $color__brand-orange;
+				font-family: Novecento Sans;
+			}
+
+			.fa{
+				font-size: 20px;
+				padding-right: 5px;
+			}
+
+		}
+
+	}
+
+	.copyright {
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		font-family: Novecento Sans;
+	}
+}
+
+/*Sidebar*/
+// .widget-area{
+// 	padding-top: 40px;
+// 	line-height:1.25;
+
+// 	h2{
+// 		letter-spacing: 2px;
+// 		color: $color__brand-orange;
+// 		font-family: Novecento Sans;
+// 	}
+
+// 	.textwidget {
+// 		color: white;
+// 	}
+
+// 	.fa {
+// 			font-size: 20px;
+// 			padding-right: 5px;
+// 	}
+// }
+

@@ -83,11 +83,21 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function inhabitent_starter_scripts() {
+	
+	// wp_enqueue_script('jquery');
+	wp_deregister_script('jquery');
+  wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js", false, null);
+  wp_enqueue_script('jquery');
+	
+	wp_enqueue_script('inhabitent-main-js', get_template_directory_uri().'/build/js/main.min.js', array('jquery'), '20160813', true);
+
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	wp_enqueue_script('inhabitent-font-awesome', 'https://use.fontawesome.com/1213519353.js', array(), '4.6.3', false);
+	
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

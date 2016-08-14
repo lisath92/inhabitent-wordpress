@@ -41,8 +41,6 @@ function inhabitent_login() { ?>
             background-size: 300px 53px;
             width: 300px;
             height: 53px;
-
-            
         }
     </style>
 <?php }

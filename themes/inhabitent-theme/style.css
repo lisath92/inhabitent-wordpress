@@ -1,10 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author: Lisa Hsu
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
-Version: 1.0.0
+Description: A theme for Inhabitent Supply Co.
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
@@ -243,16 +242,16 @@ th {
  *
  */
 @font-face {
-  font-family: 'novecento_sans_widemedium';
-  src: url("../../assets/fonts/Novecentosanswide-Medium-webfont.eot");
-  src: url("../../assets/fonts/Novecentosanswide-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecentosanswide-Medium-webfont.woff2") format("woff2"), url("../../assets/fonts/Novecentosanswide-Medium-webfont.woff") format("woff"), url("../../assets/fonts/Novecentosanswide-Medium-webfont.ttf") format("truetype"), url("../../assets/fonts/Novecentosanswide-Medium-webfont.svg#novecento_sans_widemedium") format("svg");
+  font-family: 'Novecento Sans';
+  src: url("../../assets/fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../assets/fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../assets/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../assets/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../assets/fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widemedium") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Novecento';
-  src: url("../../assets/fonts/Novecentosanswide-DemiBold-webfont.eot");
-  src: url("../../assets/fonts/Novecentosanswide-DemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Novecentosanswide-DemiBold-webfont.woff2") format("woff2"), url("../../assets/fonts/Novecentosanswide-DemiBold-webfont.woff") format("woff"), url("../../assets/fonts/Novecentosanswide-DemiBold-webfont.ttf") format("truetype"), url("../../assets/fonts/Novecentosanswide-DemiBold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  font-family: 'Novecento Sans';
+  src: url("../../assets/fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../assets/fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../assets/fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../assets/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../assets/fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -403,68 +402,23 @@ table {
   width: 100%; }
 
 /*--------------------------------------------------------------
-# Forms
+# Inputs and Buttons
 --------------------------------------------------------------*/
-/* Buttons */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
-
-/* Fields */
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  textarea:focus {
-    color: #111; }
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  padding: 3px; }
-
-textarea {
-  padding-left: 3px;
-  width: 100%; }
+/*Search Bar*/
+fieldset {
+  border: 0; }
+  fieldset input[type="search"] {
+    display: none;
+    text-transform: uppercase;
+    font-family: Novecento Sans;
+    border: none; }
+    fieldset input[type="search"]:focus {
+      outline: none; }
+  fieldset .search-submit {
+    background-color: white;
+    color: #248A83; }
+    fieldset .search-submit:focus {
+      outline: none; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -620,63 +574,86 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-/* Posts and pages */
-.sticky {
-  display: block; }
-
-.hentry {
-  margin: 0 0 1.5em; }
-
-.updated:not(.published) {
-  display: none; }
-
-.single .byline,
-.group-blog .byline {
-  display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em; }
-
-/* Asides */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
-
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
-
+/*Body*/
 body {
+  font-family: Merriweather;
+  font-size: 16px;
+  line-height: 1.75;
   color: #404040; }
 
-/*Header*/
-.main-navigation {
-  background-color: rgba(255, 255, 255, 0.5);
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  -ms-flex-align: center;
-      align-items: center;
-  position: fixed;
-  z-index: 100;
-  top: 32px;
-  height: 45px;
+.wrapper {
+  width: 1120px;
+  margin: 0 auto; }
+
+/*Fixed Header*/
+.site-header {
+  background-color: rgba(255, 255, 255, 0.7);
   border-bottom: 1px #a1a1a1 solid;
-  text-align: center; }
-  .main-navigation a {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2; }
+  .site-header .main-navigation {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 45px;
+    text-transform: uppercase;
+    font-family: Novecento Sans;
+    text-align: left; }
+  .site-header .tent-logo {
+    margin-right: auto; }
+    .site-header .tent-logo a {
+      width: 50px; }
+  .site-header button {
+    border: 0; }
+  .site-header a {
     width: 80px;
     color: #248A83; }
 
+/*Back-end User Fixed Header*/
+.logged-in .site-header {
+  top: 32px; }
+
+.logged-in .site-main {
+  margin-top: 32px; }
+
+/*Footer*/
+.site-footer {
+  background: url("../../assets/images/dark-wood2x.png");
+  width: 100%;
+  height: 300px; }
+  .site-footer .wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .site-footer .wrapper a img {
+      padding-top: 80px;
+      width: 70%; }
+    .site-footer .wrapper .site-info {
+      padding-top: 40px;
+      line-height: 1.25;
+      color: white; }
+      .site-footer .wrapper .site-info h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #d99054;
+        font-family: Novecento Sans; }
+      .site-footer .wrapper .site-info .fa {
+        font-size: 20px;
+        padding-right: 5px; }
+  .site-footer .copyright {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: Novecento Sans; }
+
+/*Sidebar*/
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
