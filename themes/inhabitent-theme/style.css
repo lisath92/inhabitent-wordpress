@@ -573,6 +573,7 @@ a {
     .site-header .tent-logo a {
       width: 50px; }
   .site-header button {
+    background-color: transparent;
     border: 0; }
   .site-header a {
     width: 80px;
@@ -581,6 +582,72 @@ a {
 /*Back-end User Fixed Header*/
 .logged-in .site-header {
   top: 32px; }
+
+/*Posts Home Page*/
+.blog .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.blog .content-area {
+  padding: 55px 55px 55px 0px;
+  width: 73%;
+  border-right: 1px #a1a1a1 solid; }
+
+.entry-header {
+  position: relative; }
+  .entry-header h2 {
+    position: absolute;
+    top: 0;
+    margin-top: 35px;
+    padding: 15px;
+    background-color: #248A83;
+    width: 73%; }
+    .entry-header h2 a {
+      letter-spacing: 2px;
+      line-height: 1;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: Novecento Sans;
+      text-transform: uppercase; }
+      .entry-header h2 a:hover {
+        color: #a1a1a1; }
+  .entry-header .entry-meta {
+    position: absolute;
+    bottom: 8px;
+    background-color: #248a83;
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    right: 0;
+    padding: 3px 20px;
+    color: white; }
+
+/*Sidebar*/
+.widget-area {
+  padding: 55px 0px 0px 55px;
+  width: 28%;
+  line-height: 2.5; }
+  .widget-area h2 {
+    text-transform: uppercase;
+    color: #2f1339;
+    margin: 0px;
+    font-family: Novecento Sans;
+    letter-spacing: 2px; }
+  .widget-area a {
+    color: #248A83; }
+    .widget-area a:hover {
+      color: #2f1339; }
+  .widget-area .fa-li {
+    padding: 10px 15px 0px 0px; }
+  .widget-area .widget_archive ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; }
 
 /*Footer*/
 .site-footer {
@@ -613,72 +680,6 @@ a {
     color: white;
     text-transform: uppercase;
     font-family: Novecento Sans; }
-
-/*Posts Home Page*/
-/*Display Blog posts*/
-.blog .site-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
-
-.blog .content-area {
-  padding: 55px 55px 55px 0px;
-  width: 73%;
-  border-right: 1px #a1a1a1 solid; }
-
-.widget-area {
-  padding: 55px 0px 0px 55px;
-  width: 28%;
-  line-height: 2.5; }
-  .widget-area h2 {
-    text-transform: uppercase;
-    color: #2f1339;
-    margin: 0px;
-    font-family: Novecento Sans;
-    letter-spacing: 2px; }
-  .widget-area a {
-    color: #248A83; }
-    .widget-area a:hover {
-      color: #2f1339; }
-  .widget-area .fa-li {
-    padding: 10px 15px 0px 0px; }
-  .widget-area .widget_archive ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5; }
-
-.entry-header {
-  position: relative; }
-  .entry-header h2 {
-    position: absolute;
-    top: 0;
-    margin-top: 35px;
-    padding: 15px;
-    background-color: #248A83;
-    width: 73%; }
-    .entry-header h2 a {
-      letter-spacing: 2px;
-      line-height: 1;
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
-      font-family: Novecento Sans;
-      text-transform: uppercase; }
-      .entry-header h2 a:hover {
-        color: #a1a1a1; }
-  .entry-header .entry-meta {
-    position: absolute;
-    bottom: 8px;
-    background-color: #248a83;
-    font-family: Novecento Sans;
-    text-transform: uppercase;
-    right: 0;
-    padding: 3px 20px;
-    color: white; }
 
 /*--------------------------------------------------------------
 # Media

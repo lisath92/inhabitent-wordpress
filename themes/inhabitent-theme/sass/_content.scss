@@ -51,7 +51,9 @@ a{
 		}
 	}
 
+//Search icon button
 	button{
+		background-color: transparent;
 		border: 0;
 	}
 
@@ -68,54 +70,9 @@ a{
 	}
 }
 
-/*Footer*/
-.site-footer{
-	background:
-	url('../../assets/images/dark-wood2x.png');
-	width:100%;
-	height: 300px;
-
-	.wrapper{
-		display: flex;
-		justify-content: space-between;
-
-		a img{
-			padding-top: 80px;
-			width: 70%;
-		}
-		.site-info {
-			padding-top: 40px;
-			line-height: 1.25;
-			color: white;
-
-			h1 {
-				text-transform: uppercase;
-				font-size: 20px;
-				letter-spacing: 2px;
-				color: $color__brand-orange;
-				font-family: Novecento Sans;
-			}
-
-			.fa{
-				font-size: 20px;
-				padding-right: 5px;
-			}
-
-		}
-
-	}
-
-	.copyright {
-		text-align: center;
-		color: white;
-		text-transform: uppercase;
-		font-family: Novecento Sans;
-	}
-}
-
 /*Posts Home Page*/
 
-/*Display Blog posts*/
+//List of blog posts
 .blog {
 	.site-content {
 		display: flex;
@@ -128,43 +85,9 @@ a{
 		width: 73%;
 		border-right: 1px $color__brand-lightgray solid;
 	}
-
 }
 
-.widget-area {
-	padding: 55px 0px 0px 55px;
-	width: 28%;
-	line-height: 2.5;
-
-	h2{
-		text-transform: uppercase;
-		color: $color__brand-purple;
-		margin: 0px;
-		font-family: Novecento Sans;
-		letter-spacing: 2px;
-	}
-
-	a {
-		color: $color__brand;
-
-		&:hover {
-			color: $color__brand-purple;
-		}
-	}
-	
-	.fa-li{
-		padding: 10px 15px 0px 0px;
-	}
-	
-	.widget_archive ul{
-		list-style-type: none;
-		margin:0;
-		padding:0;
-		line-height: $font__line-height-body;
-	}
-}
-
-
+//Each blog post
 .entry-header{
 	position: relative;
 
@@ -203,3 +126,79 @@ a{
 	}
 }	
 
+/*Sidebar*/
+.widget-area {
+	padding: 55px 0px 0px 55px;
+	width: 28%;
+	line-height: 2.5;
+
+	h2{
+		text-transform: uppercase;
+		color: $color__brand-purple;
+		margin: 0px;
+		font-family: Novecento Sans;
+		letter-spacing: 2px;
+	}
+
+	a {
+		color: $color__brand;
+
+		&:hover {
+			color: $color__brand-purple;
+		}
+	}
+	
+	.fa-li{
+		padding: 10px 15px 0px 0px;
+	}
+	
+	.widget_archive ul{
+		list-style-type: none;
+		margin:0;
+		padding:0;
+		line-height: $font__line-height-body;
+	}
+}
+
+/*Footer*/
+.site-footer{
+	background:
+	url('../../assets/images/dark-wood2x.png');
+	width:100%;
+	height: 300px;
+
+	.wrapper{
+		display: flex;
+		justify-content: space-between;
+
+		a img{
+			padding-top: 80px;
+			width: 70%;
+		}
+		.site-info {
+			padding-top: 40px;
+			line-height: 1.25;
+			color: white;
+
+			h1 {
+				text-transform: uppercase;
+				font-size: 20px;
+				letter-spacing: 2px;
+				color: $color__brand-orange;
+				font-family: Novecento Sans;
+			}
+
+			.fa{
+				font-size: 20px;
+				padding-right: 5px;
+			}
+		}
+	}
+
+	.copyright {
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		font-family: Novecento Sans;
+	}
+}
