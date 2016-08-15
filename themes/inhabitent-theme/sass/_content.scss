@@ -6,8 +6,12 @@
 body {
 	font-family: Merriweather;
 	font-size: 16px;
-	line-height: 1.75;
+	line-height: $font__line-height-body;
 	color: $color__text-main;
+}
+
+a{
+	text-decoration: none;
 }
 
 .wrapper{
@@ -110,6 +114,8 @@ body {
 }
 
 /*Posts Home Page*/
+
+/*Display Blog posts*/
 .blog {
 	.site-content {
 		display: flex;
@@ -126,7 +132,9 @@ body {
 }
 
 .widget-area {
-	padding: 55px 30px 0px 55px;
+	padding: 55px 0px 0px 55px;
+	width: 28%;
+	line-height: 2.5;
 
 	h2{
 		text-transform: uppercase;
@@ -134,6 +142,25 @@ body {
 		margin: 0px;
 		font-family: Novecento Sans;
 		letter-spacing: 2px;
+	}
+
+	a {
+		color: $color__brand;
+
+		&:hover {
+			color: $color__brand-purple;
+		}
+	}
+	
+	.fa-li{
+		padding: 10px 15px 0px 0px;
+	}
+	
+	.widget_archive ul{
+		list-style-type: none;
+		margin:0;
+		padding:0;
+		line-height: $font__line-height-body;
 	}
 }
 
@@ -152,7 +179,6 @@ body {
 		a {
 			letter-spacing: 2px;
 			line-height: 1;
-			text-decoration: none;
 			color: white;
 			font-size: 2rem;
 			font-weight: bold;
@@ -176,28 +202,4 @@ body {
 		color: white;
 	}
 }	
-
-
-
-
-
-
-	// padding-top: 40px;
-	// line-height:1.25;
-
-// 	h2{
-// 		letter-spacing: 2px;
-// 		color: $color__brand-orange;
-// 		font-family: Novecento Sans;
-// 	}
-
-// 	.textwidget {
-// 		color: white;
-// 	}
-
-// 	.fa {
-// 			font-size: 20px;
-// 			padding-right: 5px;
-// 	}
-// }
 

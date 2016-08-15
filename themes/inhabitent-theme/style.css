@@ -536,8 +536,11 @@ fieldset {
 body {
   font-family: Merriweather;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.5;
   color: #404040; }
+
+a {
+  text-decoration: none; }
 
 .wrapper {
   width: 1120px;
@@ -612,6 +615,7 @@ body {
     font-family: Novecento Sans; }
 
 /*Posts Home Page*/
+/*Display Blog posts*/
 .blog .site-content {
   display: -ms-flexbox;
   display: flex;
@@ -626,13 +630,26 @@ body {
   border-right: 1px #a1a1a1 solid; }
 
 .widget-area {
-  padding: 55px 30px 0px 55px; }
+  padding: 55px 0px 0px 55px;
+  width: 28%;
+  line-height: 2.5; }
   .widget-area h2 {
     text-transform: uppercase;
     color: #2f1339;
     margin: 0px;
     font-family: Novecento Sans;
     letter-spacing: 2px; }
+  .widget-area a {
+    color: #248A83; }
+    .widget-area a:hover {
+      color: #2f1339; }
+  .widget-area .fa-li {
+    padding: 10px 15px 0px 0px; }
+  .widget-area .widget_archive ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; }
 
 .entry-header {
   position: relative; }
@@ -646,7 +663,6 @@ body {
     .entry-header h2 a {
       letter-spacing: 2px;
       line-height: 1;
-      text-decoration: none;
       color: white;
       font-size: 2rem;
       font-weight: bold;
