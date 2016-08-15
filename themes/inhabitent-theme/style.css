@@ -423,53 +423,38 @@ fieldset {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-/* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 /* Menus */
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  .main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+    position: absolute;
+    top: 1.5em;
+    left: -999em;
+    z-index: 99999; }
+    .main-navigation ul ul ul {
+      left: -999em;
+      top: 0; }
+    .main-navigation ul ul li:hover > ul,
+    .main-navigation ul ul li.focus > ul {
+      left: 100%; }
+    .main-navigation ul ul a {
+      width: 200px; }
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    left: auto; }
+
+.main-navigation li {
+  float: left;
+  position: relative; }
+
+.main-navigation a {
+  display: block;
+  text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle,
@@ -532,33 +517,6 @@ a {
     /* Above WP toolbar. */ }
 
 /*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clearfix {
-  clear: both;
-  content: "";
-  display: table; }
-
-/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
@@ -584,6 +542,9 @@ body {
 .wrapper {
   width: 1120px;
   margin: 0 auto; }
+
+.site-content {
+  padding-top: 45px; }
 
 /*Fixed Header*/
 .site-header {
@@ -618,9 +579,6 @@ body {
 .logged-in .site-header {
   top: 32px; }
 
-.logged-in .site-main {
-  margin-top: 32px; }
-
 /*Footer*/
 .site-footer {
   background: url("../../assets/images/dark-wood2x.png");
@@ -653,7 +611,59 @@ body {
     text-transform: uppercase;
     font-family: Novecento Sans; }
 
-/*Sidebar*/
+/*Posts Home Page*/
+.blog .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.blog .content-area {
+  padding: 55px 55px 55px 0px;
+  width: 73%;
+  border-right: 1px #a1a1a1 solid; }
+
+.widget-area {
+  padding: 55px 30px 0px 55px; }
+  .widget-area h2 {
+    text-transform: uppercase;
+    color: #2f1339;
+    margin: 0px;
+    font-family: Novecento Sans;
+    letter-spacing: 2px; }
+
+.entry-header {
+  position: relative; }
+  .entry-header h2 {
+    position: absolute;
+    top: 0;
+    margin-top: 35px;
+    padding: 15px;
+    background-color: #248A83;
+    width: 73%; }
+    .entry-header h2 a {
+      letter-spacing: 2px;
+      line-height: 1;
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: Novecento Sans;
+      text-transform: uppercase; }
+      .entry-header h2 a:hover {
+        color: #a1a1a1; }
+  .entry-header .entry-meta {
+    position: absolute;
+    bottom: 8px;
+    background-color: #248a83;
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    right: 0;
+    padding: 3px 20px;
+    color: white; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
