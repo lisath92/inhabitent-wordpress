@@ -115,7 +115,7 @@ button{
 
 	.content-area{
 		padding: 55px 55px 55px 0px;
-		width: 73%;
+		width: 94%;
 		border-right: 1px $color__brand-lightgray solid;
 	}
 }
@@ -134,14 +134,13 @@ button{
 			width: 73%;
 			color: white;
 			font-family: Novecento Sans;
-			font-size: 2rem;
 
 
 			a {
 				letter-spacing: 2px;
 				line-height: 1;
 				color: white;
-				font-size: 2rem;
+				font-size: 2.3rem;
 				font-weight: bold;
 				text-transform: uppercase;
 
@@ -236,8 +235,6 @@ button{
 		.product{
 			padding: 10px;
 			width: 23%;
-			
-		
 		}
 
 		.product-description{
@@ -258,16 +255,28 @@ button{
 
 			&:after{
 				content: "........................ ";
-
 			}
 		}
 
-		img {
+		.product-image {
 			width: 100%;
-			height: 200px;
+			height: 250px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+
+			a {
+				height: 100%;
+			}
+
+			img {
+				max-width: none;
+			}
 		}
 	}
 }
+
 
 /*About Page*/
 .about-title{
@@ -294,8 +303,8 @@ button{
 /*Sidebar*/
 .widget-area {
 	padding: 55px 0px 0px 55px;
-	width: 28%;
-	line-height: 2.5;
+	width: 30%;
+	// line-height: 2.5;
 
 	h2{
 		text-transform: uppercase;
@@ -321,6 +330,10 @@ button{
 	.widget_archive ul{
 		list-style-type: none;
 		line-height: $font__line-height-body;
+	}
+
+	.business-hours-items{
+		font-weight: bold;
 	}
 }
 

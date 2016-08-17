@@ -10,7 +10,7 @@
         <div class="product-image">
             <?php if ( has_post_thumbnail() ) : ?>
             <a href="<?php echo get_permalink()?>">
-            <?php the_post_thumbnail( 'medium' ); ?></a>
+            <?php the_post_thumbnail(array('auto', 250)) ; ?></a>
             <?php endif; ?>
         </div>
         
