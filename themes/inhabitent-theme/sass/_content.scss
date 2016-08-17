@@ -270,15 +270,25 @@ button{
 }
 
 /*About Page*/
-// .page-template-page-about {
-	
-// 	.entry-title{
-// 		background-color: transparent;
-// 		color: white;
-// 		text-transform: uppercase;
+.about-title{
+	color: white;
+	font-family: Novecento Sans;
+	text-transform: uppercase;
+	font-size: 3rem;
+	letter-spacing: 2px;
+}
 
-// 	}
-// }
+.about-content{
+	width: 60%;
+	padding-bottom: 35px;
+
+	h2{
+		font-family: Novecento Sans;
+		text-align: center;
+		font-size: 2.5rem;
+		text-transform: uppercase;
+	}
+}
 
 
 /*Sidebar*/

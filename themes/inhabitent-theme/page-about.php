@@ -12,23 +12,11 @@ get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
       <?php //while ( have_posts() ) : the_post(); ?>
-        <div class="hero-image">
-        <style type="text/css">
-          .hero-image{
-            background:
-              linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url('<?php echo CFS()->get('hero_image'); ?>') no-repeat;
-              height:100vh;
-              background-position: bottom;
-              background-size: cover,cover;
-          }
-    </style>
-        <h2 class="title"><?php echo CFS()->get('header')?></h2>
+        <div id="about-hero-image">
+        <h2 class="about-title"><?php echo CFS()->get('header')?></h2>
       </div>
-        <?//php get_template_part( 'template-parts/content', 'page' ); ?>
-
-      <?php //endwhile; // End of the loop. ?>
-
+      <div class="wrapper about-content">
+        <?php echo CFS()->get('content') ?></div>
     </main><!-- #main -->
   </div><!-- #primary -->
 

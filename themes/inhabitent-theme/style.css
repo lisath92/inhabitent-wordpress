@@ -681,6 +681,22 @@ a {
     height: 200px; }
 
 /*About Page*/
+.about-title {
+  color: white;
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2px; }
+
+.about-content {
+  width: 60%;
+  padding-bottom: 35px; }
+  .about-content h2 {
+    font-family: Novecento Sans;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase; }
+
 /*Sidebar*/
 .widget-area {
   padding: 55px 0px 0px 55px;
