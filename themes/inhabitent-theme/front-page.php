@@ -42,7 +42,9 @@ get_header(); ?>
 
 
 
-  $shop_categories = get_terms($category_arr); ?>
+  $shop_categories = get_terms($category_arr);
+
+  print_r($shop_categories);?>
 
 
   <?php foreach ( $shop_categories as $tag ): ?>
@@ -51,7 +53,7 @@ get_header(); ?>
 
       <p><?php echo $tag->description; ?></p>
       <div class="stuff">
-      <a href="<?php echo get_term_link($tag); ?>">
+      <a href="<?php echo get_category_link($tag); ?>">
         <?php echo $tag->name.' stuff'; ?></a>
       </div>
 

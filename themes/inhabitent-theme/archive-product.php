@@ -14,14 +14,14 @@ get_header(); ?>
 
       <header class="page-header">
        <h1>Shop Stuff</h1>
-       <div>
+       <!-- <div> -->
         <ul class="shop-nav">
           <li><a href="<?php get_term_link('do'); ?>">Do</a></li>
           <li><a href="<?php get_term_link('eat'); ?>">Eat</a></li>
           <li><a href="<?php get_term_link('sleep'); ?>">Sleep</a></li>
           <li><a href="<?php get_term_link('wear'); ?>">Wear</a></li>
         </ul> 
-      </div>
+      <!-- </div> -->
     </header><!-- .page-header -->
 
     <?php /* Start the Loop */ ?>

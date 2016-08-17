@@ -565,28 +565,53 @@ a {
       color: white; }
 
 /*Shop Archive*/
-.archive .shop-nav,
-.archive h1 {
-  text-align: center;
-  font-family: Novecento Sans;
-  text-transform: uppercase; }
+.archive .page-header {
+  border-bottom: 1px lightgray dotted;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
-.archive .shop-nav {
+.archive .site-content {
+  padding-bottom: 80px; }
+
+h1 {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  padding-left: 40px;
+  font-size: 2.5rem;
+  margin-bottom: 0; }
+
+.shop-nav {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
   -ms-flex-pack: center;
-      justify-content: center; }
-  .archive .shop-nav a {
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-size: 1.3rem;
+  text-align: center; }
+  .shop-nav li {
+    text-align: center;
+    margin: 0 1.5rem; }
+  .shop-nav a {
     width: 1rem;
-    margin: 1rem 2rem;
     color: #248A83; }
-    .archive .shop-nav a:hover {
+    .shop-nav a:hover {
       color: #2f1339; }
 
-.archive .products-grid {
+.products-grid {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
@@ -596,12 +621,12 @@ a {
   -ms-flex-pack: center;
       justify-content: center;
   width: 100%; }
-  .archive .products-grid .product {
+  .products-grid .product {
     padding: 10px;
     width: 23%; }
-  .archive .products-grid .product-description {
+  .products-grid .product-description {
     border: 1px lightgray solid;
-    border-top: 10px lightgray solid;
+    border-top: 5px lightgray solid;
     text-align: center;
     display: -ms-flexbox;
     display: flex;
@@ -610,14 +635,14 @@ a {
     -ms-flex-align: center;
         align-items: center;
     padding: 0px 10px; }
-  .archive .products-grid .product-info {
+  .products-grid .product-info {
     font-size: 16px;
     font-weight: normal;
     overflow: hidden;
     white-space: nowrap; }
-    .archive .products-grid .product-info:after {
+    .products-grid .product-info:after {
       content: "........................ "; }
-  .archive .products-grid .product-image {
+  .products-grid .product-image {
     width: 100%;
     height: 250px;
     display: -ms-flexbox;
@@ -627,9 +652,9 @@ a {
     -ms-flex-align: center;
         align-items: center;
     overflow: hidden; }
-    .archive .products-grid .product-image a {
+    .products-grid .product-image a {
       height: 100%; }
-    .archive .products-grid .product-image img {
+    .products-grid .product-image img {
       max-width: none; }
 
 /*About Page*/
@@ -702,66 +727,6 @@ a {
     color: white;
     text-transform: uppercase;
     font-family: Novecento Sans; }
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%; }
-
-/* Captions */
-.wp-caption {
-  margin-bottom: 1.5em;
-  max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075em 0; }
-
-.wp-caption-text {
-  text-align: center; }
-
-/* Galleries*/
-.gallery {
-  margin-bottom: 1.5em; }
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.33%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.66%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.28%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.11%; }
-
-.gallery-caption {
-  display: block; }
 
 /*--------------------------------------------------------------
 # Page Templates
