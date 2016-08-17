@@ -25,6 +25,13 @@
       <i class="fa fa-google-plus-square" aria-hidden="true">
       </i>
     </div>
+    <div class="site-info">
+      <h1>Business Hours</h1>
+        <p>Monday-Friday: 9am to 5pm</p>
+        <p>Saturday: 10am to 2pm</p>
+        <p>Sunday: Closed</p>
+    </div>
+    
     <!--site-info-->
     <a href="<?php echo home_url() ?>">
       <img src="<?php echo get_template_directory_uri().'/assets/images/inhabitent-logo-text.svg'; ?>" alt="Full logo linking back to home page"/>
