@@ -624,46 +624,61 @@ a {
       color: white; }
 
 /*Shop Archive*/
-.archive {
+.archive .shop-nav,
+.archive h1 {
+  text-align: center;
   font-family: Novecento Sans;
   text-transform: uppercase; }
-  .archive h1 {
-    text-align: center; }
-  .archive .shop-nav {
-    list-style-type: none;
+
+.archive .shop-nav {
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .archive .shop-nav a {
+    width: 1rem;
+    margin: 1rem 2rem;
+    color: #248A83; }
+    .archive .shop-nav a:hover {
+      color: #2f1339; }
+
+.archive .products-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%; }
+  .archive .products-grid .product {
+    padding: 10px;
+    width: 23%; }
+  .archive .products-grid .product-description {
+    border: 1px lightgray solid;
+    border-top: 10px lightgray solid;
+    text-align: center;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    text-align: center; }
-    .archive .shop-nav a {
-      width: 1rem;
-      margin: 1rem 2rem;
-      color: #248A83; }
-      .archive .shop-nav a:hover {
-        color: #2f1339; }
-  .archive .products-grid {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-    width: 100%; }
-    .archive .products-grid .product {
-      padding: 10px; }
-    .archive .products-grid .product-description {
-      border: 1px lightgray solid;
-      text-align: center; }
-    .archive .products-grid .product-name {
-      font-size: 16px; }
-    .archive .products-grid img {
-      width: 250px;
-      height: 200px; }
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 0px 10px; }
+  .archive .products-grid .product-info {
+    font-size: 16px;
+    font-weight: normal;
+    overflow: hidden;
+    white-space: nowrap; }
+    .archive .products-grid .product-info:after {
+      content: "........................ "; }
+  .archive .products-grid img {
+    width: 100%;
+    height: 200px; }
 
 /*About Page*/
 /*Sidebar*/

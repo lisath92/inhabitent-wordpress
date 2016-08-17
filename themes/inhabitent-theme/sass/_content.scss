@@ -61,10 +61,10 @@ a{
 	}
 
 //Search icon button
-	button{
-		background-color: transparent;
-		border: 0;
-	}
+button{
+	background-color: transparent;
+	border: 0;
+}
 }
 
 /*Back-end User Fixed Header*/
@@ -126,50 +126,50 @@ a{
 
 	// .entry-title{
 		h2{
-		position: absolute;
-		top:0;
-		margin-top: 35px;
-		padding: 15px;
-		background-color: $color__brand;
-		width: 73%;
-		color: white;
-		font-family: Novecento Sans;
-		font-size: 2rem;
-
-		
-		a {
-			letter-spacing: 2px;
-			line-height: 1;
+			position: absolute;
+			top:0;
+			margin-top: 35px;
+			padding: 15px;
+			background-color: $color__brand;
+			width: 73%;
 			color: white;
+			font-family: Novecento Sans;
 			font-size: 2rem;
-			font-weight: bold;
+
+
+			a {
+				letter-spacing: 2px;
+				line-height: 1;
+				color: white;
+				font-size: 2rem;
+				font-weight: bold;
+				text-transform: uppercase;
+
+				&:hover {
+					color: $color__brand-lightgray;
+				}
+			}
+		}
+
+		.entry-meta {
+			position: absolute;
+			bottom: 6px;
+			background-color: #248a83;
+			font-family: Novecento Sans;
 			text-transform: uppercase;
-
-			&:hover {
-				color: $color__brand-lightgray;
-			}
-		}
-	}
-	
-	.entry-meta {
-		position: absolute;
-		bottom: 6px;
-		background-color: #248a83;
-		font-family: Novecento Sans;
-		text-transform: uppercase;
-		right: 0;
-		padding: 3px 20px;
-		color: white;
-
-		.comments-link a {
+			right: 0;
+			padding: 3px 20px;
 			color: white;
-			
-			&:hover {
-				color: $color__brand-lightgray;
+
+			.comments-link a {
+				color: white;
+
+				&:hover {
+					color: $color__brand-lightgray;
+				}
 			}
 		}
-	}
-}	
+	}	
 
 //Read more button
 .read-more {
@@ -201,29 +201,29 @@ a{
 
 /*Shop Archive*/
 .archive {
-	font-family: Novecento Sans;
-	text-transform: uppercase;
-	
+	.shop-nav,
 	h1 {
 		text-align: center;
+		font-family: Novecento Sans;
+		text-transform: uppercase;
+
 	}
 
 	.shop-nav{
-	   list-style-type: none;
-	   display: flex;
-	   flex-flow: row nowrap;
-	   justify-content: center;
-	   text-align: center;
+		list-style-type: none;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
 
-	   a {
-	   	width: 1rem;
-	   	margin: 1rem 2rem;
-	   	color: $color__brand;
+		a {
+			width: 1rem;
+			margin: 1rem 2rem;
+			color: $color__brand;
 
 			&:hover{
 				color: $color__brand-purple;
 			}
-	  }
+		}
 	}
 
 	.products-grid {
@@ -235,21 +235,35 @@ a{
 		
 		.product{
 			padding: 10px;
+			width: 23%;
+			
+		
 		}
 
 		.product-description{
 			border: 1px lightgray solid;
+			border-top: 10px lightgray solid;
 			text-align: center;
-		}
-		.product-name{
-			// display: inline;
-			font-size: 16px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding: 0px 10px;
 		}
 
-			
-		
+		.product-info{
+			font-size: 16px;
+			font-weight: normal;
+			overflow: hidden;
+			white-space: nowrap;
+
+			&:after{
+				content: "........................ ";
+
+			}
+		}
+
 		img {
-			width: 250px;
+			width: 100%;
 			height: 200px;
 		}
 	}
