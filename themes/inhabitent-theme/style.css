@@ -469,9 +469,10 @@ a {
     color: #248A83; }
     .site-header a:hover {
       color: #2f1339; }
-  .site-header button {
+  .site-header .search-submit {
     background-color: transparent;
-    border: 0; }
+    border: 0;
+    cursor: pointer; }
 
 /*Back-end User Fixed Header*/
 .logged-in .site-header {

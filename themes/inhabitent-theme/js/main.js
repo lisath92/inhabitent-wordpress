@@ -6,9 +6,10 @@ $(function() {
         var searchBar = $('input[type="search"]');
 
         if ($(event.target).parents().hasClass("search-form")) {
-            event.preventDefault();
+            
             searchBar.show('slow');
             searchBar.focus(); //check if button was clicked
+
 
         } else if (searchBar.val().length > 0) {//end first if statement
             searchBar.focusout();
