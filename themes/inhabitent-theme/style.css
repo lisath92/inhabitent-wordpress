@@ -345,61 +345,11 @@ big {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-size: 1rem; }
-
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit; }
-
-body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
-
-blockquote, q {
-  quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: ""; }
-
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1.5em; }
-
-ul, ol {
-  margin: 0 0 1.5em 3em; }
-
-ul {
-  list-style: disc; }
-
-ol {
-  list-style: decimal; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5em; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  margin: 0 1.5em 1.5em; }
-
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */ }
-
-table {
-  margin: 0 0 1.5em;
-  width: 100%; }
 
 /*--------------------------------------------------------------
 # Inputs and Buttons
@@ -567,17 +517,19 @@ a {
     height: 45px;
     text-transform: uppercase;
     font-family: Novecento Sans;
-    text-align: left; }
+    text-align: center; }
   .site-header .tent-logo {
     margin-right: auto; }
     .site-header .tent-logo a {
       width: 50px; }
-  .site-header button {
-    background-color: transparent;
-    border: 0; }
   .site-header a {
     width: 80px;
     color: #248A83; }
+    .site-header a:hover {
+      color: #2f1339; }
+  .site-header button {
+    background-color: transparent;
+    border: 0; }
 
 /*Back-end User Fixed Header*/
 .logged-in .site-header {
@@ -620,7 +572,7 @@ a {
 
 .entry-header {
   position: relative; }
-  .entry-header .entry-title {
+  .entry-header h2 {
     position: absolute;
     top: 0;
     margin-top: 35px;
@@ -628,15 +580,16 @@ a {
     background-color: #248A83;
     width: 73%;
     color: white;
-    font-family: Novecento Sans; }
-    .entry-header .entry-title a {
+    font-family: Novecento Sans;
+    font-size: 2rem; }
+    .entry-header h2 a {
       letter-spacing: 2px;
       line-height: 1;
       color: white;
       font-size: 2rem;
       font-weight: bold;
       text-transform: uppercase; }
-      .entry-header .entry-title a:hover {
+      .entry-header h2 a:hover {
         color: #a1a1a1; }
   .entry-header .entry-meta {
     position: absolute;
@@ -670,6 +623,49 @@ a {
     .read-more:hover a {
       color: white; }
 
+/*Shop Archive*/
+.archive {
+  font-family: Novecento Sans;
+  text-transform: uppercase; }
+  .archive h1 {
+    text-align: center; }
+  .archive .shop-nav {
+    list-style-type: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-align: center; }
+    .archive .shop-nav a {
+      width: 1rem;
+      margin: 1rem 2rem;
+      color: #248A83; }
+      .archive .shop-nav a:hover {
+        color: #2f1339; }
+  .archive .products-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%; }
+    .archive .products-grid .product {
+      padding: 10px; }
+    .archive .products-grid .product-description {
+      border: 1px lightgray solid;
+      text-align: center; }
+    .archive .products-grid .product-name {
+      font-size: 16px; }
+    .archive .products-grid img {
+      width: 250px;
+      height: 200px; }
+
+/*About Page*/
 /*Sidebar*/
 .widget-area {
   padding: 55px 0px 0px 55px;
@@ -689,8 +685,6 @@ a {
     padding: 10px 15px 0px 0px; }
   .widget-area .widget_archive ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     line-height: 1.5; }
 
 /*Footer*/

@@ -40,7 +40,7 @@ a{
 		height: 45px;
 		text-transform: uppercase;
 		font-family: Novecento Sans;
-		text-align: left;
+		text-align: center;
 	}
 	
 	.tent-logo {
@@ -51,15 +51,19 @@ a{
 		}
 	}
 
+	a {
+		width: 80px;
+		color: $color__brand;
+		
+		&:hover {
+			color: $color__brand-purple;
+		}
+	}
+
 //Search icon button
 	button{
 		background-color: transparent;
 		border: 0;
-	}
-
-	a {
-		width: 80px;
-		color: $color__brand;
 	}
 }
 
@@ -77,6 +81,8 @@ a{
 	margin: 0;
 	padding-top:0;
 }
+
+//add mixin?
 
 .home	.hero-image {
 	background:
@@ -118,7 +124,8 @@ a{
 .entry-header{
 	position: relative;
 
-	.entry-title{
+	// .entry-title{
+		h2{
 		position: absolute;
 		top:0;
 		margin-top: 35px;
@@ -127,6 +134,7 @@ a{
 		width: 73%;
 		color: white;
 		font-family: Novecento Sans;
+		font-size: 2rem;
 
 		
 		a {
@@ -190,6 +198,75 @@ a{
 	}
 }
 
+
+/*Shop Archive*/
+.archive {
+	font-family: Novecento Sans;
+	text-transform: uppercase;
+	
+	h1 {
+		text-align: center;
+	}
+
+	.shop-nav{
+	   list-style-type: none;
+	   display: flex;
+	   flex-flow: row nowrap;
+	   justify-content: center;
+	   text-align: center;
+
+	   a {
+	   	width: 1rem;
+	   	margin: 1rem 2rem;
+	   	color: $color__brand;
+
+			&:hover{
+				color: $color__brand-purple;
+			}
+	  }
+	}
+
+	.products-grid {
+		display: flex;
+		flex-flow: row wrap;
+		align-content: center;
+		justify-content: center;
+		width: 100%;
+		
+		.product{
+			padding: 10px;
+		}
+
+		.product-description{
+			border: 1px lightgray solid;
+			text-align: center;
+		}
+		.product-name{
+			// display: inline;
+			font-size: 16px;
+		}
+
+			
+		
+		img {
+			width: 250px;
+			height: 200px;
+		}
+	}
+}
+
+/*About Page*/
+// .page-template-page-about {
+	
+// 	.entry-title{
+// 		background-color: transparent;
+// 		color: white;
+// 		text-transform: uppercase;
+
+// 	}
+// }
+
+
 /*Sidebar*/
 .widget-area {
 	padding: 55px 0px 0px 55px;
@@ -211,6 +288,7 @@ a{
 			color: $color__brand-purple;
 		}
 	}
+
 	
 	.fa-li{
 		padding: 10px 15px 0px 0px;
@@ -218,8 +296,6 @@ a{
 	
 	.widget_archive ul{
 		list-style-type: none;
-		margin:0;
-		padding:0;
 		line-height: $font__line-height-body;
 	}
 }

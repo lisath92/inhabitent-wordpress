@@ -2,7 +2,7 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 /**
@@ -57,3 +57,16 @@ function inhabitent_url_title() {
     return 'Inhabitent Supply Co.';
 }
 add_filter( 'login_headertitle', 'inhabitent_url_title' );
+
+//Adjusting archive page loop for products
+function inhabitent_modify_product_archive($query){
+    if(is_post_type_archive('product') && !is_admin() && $query->is_main_query()){
+        $query->set('posts_per_page', 16);
+        $query->set('order', 'ASC');
+        $query->set('orderby', 'title');
+
+
+    }
+
+}
+add_action('pre_get_posts', 'inhabitent_modify_product_archive');

@@ -4,14 +4,14 @@
  *
  * Template Name: About Page
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <?php while ( have_posts() ) : the_post(); ?>
+      <?php //while ( have_posts() ) : the_post(); ?>
         <div class="hero-image">
         <style type="text/css">
           .hero-image{
@@ -21,14 +21,13 @@ get_header(); ?>
               height:100vh;
               background-position: bottom;
               background-size: cover,cover;
-              margin:0;
-              padding-top:0;
           }
     </style>
+        <h2 class="title"><?php echo CFS()->get('header')?></h2>
       </div>
-        <?php get_template_part( 'template-parts/content', 'page' ); ?>
+        <?//php get_template_part( 'template-parts/content', 'page' ); ?>
 
-      <?php endwhile; // End of the loop. ?>
+      <?php //endwhile; // End of the loop. ?>
 
     </main><!-- #main -->
   </div><!-- #primary -->

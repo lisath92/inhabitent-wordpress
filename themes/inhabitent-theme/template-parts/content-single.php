@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 ?>
@@ -13,7 +13,7 @@
 			<?php the_post_thumbnail( 'full' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 
 		<div class="entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
