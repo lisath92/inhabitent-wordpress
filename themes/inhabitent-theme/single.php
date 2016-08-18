@@ -13,8 +13,11 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-			<?php the_post_navigation(); ?>
+		<div class="social-media">
+			<button><i class="fa fa-facebook" aria-hidden="true"></i>Like</button>
+			<button><i class="fa fa-twitter" aria-hidden="true"></i>Tweet</button>
+			<button><i class="fa fa-pinterest" 	aria-hidden="true"></i>Pin</button>
+		</div>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.

@@ -565,6 +565,33 @@ a {
     .read-more:hover a {
       color: white; }
 
+/*Single Blog Post*/
+.social-media {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  margin-top: 20px; }
+  .social-media .fa {
+    margin-right: 10px; }
+  .social-media button {
+    color: #2f1339;
+    background-color: white;
+    border: 1px #2f1339 solid;
+    padding: 8px 25px;
+    width: auto; }
+    .social-media button:hover {
+      border: none;
+      color: white;
+      background-color: #248A83; }
+
+.entry-footer {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  margin-top: 20px; }
+  .entry-footer a {
+    color: #248A83; }
+  .entry-footer .cat-links {
+    margin-right: 20px; }
+
 /*Shop Archive*/
 .archive .page-header {
   border-bottom: 1px lightgray dotted;
@@ -582,7 +609,7 @@ a {
 .archive .site-content {
   padding-bottom: 80px; }
 
-h1 {
+.archive h1 {
   font-family: Novecento Sans;
   text-transform: uppercase;
   padding-left: 40px;
@@ -678,7 +705,8 @@ h1 {
 /*Sidebar*/
 .widget-area {
   padding: 55px 0px 0px 55px;
-  width: 30%; }
+  width: 30%;
+  line-height: 2.5; }
   .widget-area h2 {
     text-transform: uppercase;
     color: #2f1339;
