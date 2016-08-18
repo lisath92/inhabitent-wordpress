@@ -11,6 +11,7 @@ fieldset {
 		text-transform: uppercase;
 		font-family: Novecento Sans;
 		border: none;
+		background: transparent;
 		
 		&:focus{
 			outline: none;
@@ -18,11 +19,12 @@ fieldset {
 	}
 
 	.search-submit {
-		background-color: white;
+		background-color: transparent;
 		color: $color__brand;
-			&:focus {
+		border: 0;
+		cursor: pointer;
+		&:focus {
 			outline: none;
 		}
-		
 	}
 }

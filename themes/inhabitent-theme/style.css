@@ -303,12 +303,15 @@ fieldset {
     display: none;
     text-transform: uppercase;
     font-family: Novecento Sans;
-    border: none; }
+    border: none;
+    background: transparent; }
     fieldset input[type="search"]:focus {
       outline: none; }
   fieldset .search-submit {
-    background-color: white;
-    color: #248A83; }
+    background-color: transparent;
+    color: #248A83;
+    border: 0;
+    cursor: pointer; }
     fieldset .search-submit:focus {
       outline: none; }
 
@@ -469,10 +472,6 @@ a {
     color: #248A83; }
     .site-header a:hover {
       color: #2f1339; }
-  .site-header .search-submit {
-    background-color: transparent;
-    border: 0;
-    cursor: pointer; }
 
 /*Back-end User Fixed Header*/
 .logged-in .site-header {
@@ -553,7 +552,7 @@ a {
   width: 140px;
   line-height: 0;
   margin-bottom: 20px;
-  padding: 5px 10px 0px; }
+  padding: 5px 10px; }
   .read-more a {
     font-size: 14px;
     text-transform: uppercase;

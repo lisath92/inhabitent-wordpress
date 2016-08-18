@@ -12,14 +12,19 @@ get_header(); ?>
 
     <?php if ( have_posts() ) : ?>
 
+    <?php 
+      $arr = array(
+        'taxonomy' => 'product-type');
+      $categories = get_terms($arr); ?>
+
       <header class="page-header">
        <h1>Shop Stuff</h1>
-       <!-- <div> -->
+    <?php foreach ( $categories as $category) : ?>
+
         <ul class="shop-nav">
-          <li><a href="<?php get_term_link('do'); ?>">Do</a></li>
-          <li><a href="<?php get_term_link('eat'); ?>">Eat</a></li>
-          <li><a href="<?php get_term_link('sleep'); ?>">Sleep</a></li>
-          <li><a href="<?php get_term_link('wear'); ?>">Wear</a></li>
+          <li><a href="<?php echo get_category_link($category); ?>">
+        <?php echo $category->name; ?></a></li>
+          <?php endforeach; ?>
         </ul> 
       <!-- </div> -->
     </header><!-- .page-header -->

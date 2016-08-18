@@ -42,9 +42,7 @@ get_header(); ?>
 
 
 
-  $shop_categories = get_terms($category_arr);
-
-  print_r($shop_categories);?>
+  $shop_categories = get_terms($category_arr); ?>
 
 
   <?php foreach ( $shop_categories as $tag ): ?>

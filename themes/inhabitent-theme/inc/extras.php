@@ -70,7 +70,7 @@ add_action('pre_get_posts', 'inhabitent_modify_product_archive');
 
 
 function inhabitent_about_inline_styles() {
-  if (!is_page_template( 'about.php' )) {
+  if (!is_page_template( 'page-about.php' )) {
     return;
   }
     $css = '';
@@ -81,7 +81,7 @@ function inhabitent_about_inline_styles() {
     }
             $css .= '
                 #about-hero-image { 
-                   background:
+                  background:
                   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
                   url('.$logo.') no-repeat;
                   height:100vh;
