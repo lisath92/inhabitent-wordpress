@@ -48,24 +48,7 @@
 	padding-top:0;
 }
 
-//add mixin?
-
-.home	.hero-image {
-	background:
-	linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-	url('../../assets/images/home-hero.jpg')no-repeat;
-	height: 100vh;
-	background-size: cover, cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-	img{
-		width: 280px;
-	}
-}
-
-/*Posts Home Page*/
+/*Blogs Page*/
 
 //List of blog posts
 .single,
@@ -141,21 +124,21 @@
 	line-height: 0;
 	margin-bottom: 20px;
 	padding: 5px 10px;
-
+	cursor: pointer;
+	
 	a {
+		@include font-uppercase;
 		font-size: 14px;
-		text-transform: uppercase;
-		font-family: Novecento Sans;
 		color: $color__brand-purple;
 	}
 
 	&:hover {
 		background-color: $color__brand;
-		color: white;
-		
+		border: none;	
+
 		a {
 			color: white;
-		}
+		}	
 	}
 }
 

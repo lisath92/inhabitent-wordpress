@@ -39,28 +39,35 @@ get_header(); ?>
           <?php endforeach; ?> 
         </div>
       </section>
+      
       <section class="news-feed">
         <h1 class="news-feed-title">Inhabitent Journal</h1>
+        <div class="inhabitent-journal">
 
         <?php
-        $args = array('posts_per_page' => 3);
+          $args = array('posts_per_page' => 3);
 
-   $news_feed = get_posts( $args ); // returns an array of posts
-   ?>
-   <?php foreach ( $news_feed as $post ) : setup_postdata( $post ); ?>
-     <?php 
-     echo the_post_thumbnail('small');
-     echo "<p> ".the_title()."</p>"; 
-     echo get_the_author();
-     echo "<p> ".comments_number()."</p>";
-     ?>
+          $news_feed = get_posts( $args ); // returns an array of posts ?>
+        <?php foreach ( $news_feed as $post ) : setup_postdata( $post ); ?>
+          <div class="latest-blog">
+          
+        <?php 
+         the_post_thumbnail('small'); ?>
+         <p class="latest-blog-meta">
+         <?php inhabitent_posted_on(); ?>/<?php comments_number( '0 Comments', '1 Comment', '% Comments' );?>
+         </p>
+         <?php
+         the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>');
+         ?>
+          </div>
    <?php endforeach; wp_reset_postdata(); ?>
-
+  </div>
  </section>
 
  
-
- <p>content content content content content content</p>
+<section class="adventures">
+ <h1>Latest Adventures</h1>
+ </section>
 </main><!-- #main -->
 </div><!-- #primary -->
 <?php get_footer(); ?>
