@@ -61,8 +61,8 @@ get_header(); ?>
                <?php
                the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2></p>');
                ?>
-               <div class="read-more">
-          <p><a href="<?php the_permalink(); ?>">Read entry &#8594;</a></p>
+               <div class="read-more-box">
+          <p><a href="<?php the_permalink(); ?>" class="read-more">Read entry &#8594;</a></p>
           </div>
              </div>
            </div>

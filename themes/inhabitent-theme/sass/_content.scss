@@ -51,6 +51,7 @@
 /*Blogs Page*/
 
 //List of blog posts
+.archive,
 .single,
 .blog {
 	.site-content {
@@ -67,80 +68,84 @@
 
 
 //Each blog post
+
 .entry-header{
 	position: relative;
 
 	.entry-title{
-		// h2{
-			position: absolute;
-			top:0;
-			margin-top: 35px;
-			padding: 15px;
-			background-color: $color__brand;
-			width: 73%;
+		position: absolute;
+		top:0;
+		margin-top: 35px;
+		padding: 15px;
+		background-color: $color__brand;
+		width: 73%;
+		color: white;
+		font-size: 2.3rem;
+		letter-spacing: 2px;
+		line-height: 1;
+		font-weight: bold;
+		@include font-uppercase;
+
+
+		a {
 			color: white;
-			font-size: 2.3rem;
-			letter-spacing: 2px;
-			line-height: 1;
 			font-weight: bold;
-			@include font-uppercase;
 
-
-			a {
-				color: white;
-				font-weight: bold;
-
-				&:hover {
-					color: $color__brand-lightgray;
-				}
+			&:hover {
+				color: $color__brand-lightgray;
 			}
 		}
+	}
+}
 
-		.entry-meta {
-			position: absolute;
-			bottom: 6px;
-			background-color: #248a83;
-			font-family: Novecento Sans;
-			text-transform: uppercase;
-			right: 0;
-			padding: 3px 20px;
-			color: white;
+.entry-content p {
+	margin: 0;
+}
 
-			.comments-link a {
-				color: white;
+.entry-meta {
+	position: absolute;
+	bottom: 6px;
+	background-color: #248a83;
+	font-family: Novecento Sans;
+	text-transform: uppercase;
+	right: 0;
+	padding: 3px 20px;
+	color: white;
 
-				&:hover {
-					color: $color__brand-lightgray;
-				}
-			}
+	.comments-link a {
+		color: white;
+
+		&:hover {
+			color: $color__brand-lightgray;
 		}
-	}	
+	}
+}
+
 
 //Read more button
+.read-more-box {
+	margin: 2rem 0px 4.5rem;
+}
+
 .read-more {
 	border: 1px $color__brand-purple solid;
 	text-align: center;
 	width: 140px;
 	line-height: 0;
-	margin-bottom: 20px;
-	padding: 5px 10px;
+	padding: 12px 20px;
 	cursor: pointer;
+	@include font-uppercase;
+	font-size: 14px;
+	color: $color__brand-purple;
 
-	a {
-		@include font-uppercase;
-		font-size: 14px;
-		color: $color__brand-purple;
-	}
 
 	&:hover {
 		background-color: $color__brand;
 		border: none;	
-
-		a {
-			color: white;
-		}	
+		color: white;
 	}
 }
+
 
 /*Single Blog Post*/
 .social-media {
@@ -176,7 +181,8 @@
 }
 
 /*Shop Archive*/
-.archive {
+.tax-product-type,
+.post-type-archive{
 	.page-header{
 		border-bottom: $border__dash;
 		padding-bottom: 30px;
@@ -269,11 +275,19 @@
 	}
 }
 
+/*Blog Archives*/
+.page-title{
+	@include font-uppercase;
+	border-bottom: $border__solid;
+	padding-bottom: 1rem;
+	font-size: 2.5rem;
+	margin-bottom: 3rem;
+}
+
 /*About Page*/
 .about-title{
 	color: white;
-	font-family: Novecento Sans;
-	text-transform: uppercase;
+	@include font-uppercase;
 	font-size: 3rem;
 	letter-spacing: 2px;
 }

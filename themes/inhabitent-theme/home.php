@@ -16,9 +16,6 @@
         <?php while ( have_posts() ) : the_post(); ?>
 
           <?php get_template_part( 'template-parts/content' ); ?>
-          <div class="read-more">
-          <p><a href="<?php the_permalink(); ?>">Read More &#8594;</a></p>
-          </div>
         <?php endwhile; ?>
 
         <?php the_posts_navigation(); ?>

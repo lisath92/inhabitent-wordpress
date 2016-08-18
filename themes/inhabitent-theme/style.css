@@ -499,6 +499,7 @@ fieldset {
   padding-top: 0; }
 
 /*Blogs Page*/
+.archive .site-content,
 .single .site-content,
 .blog .site-content {
   display: -ms-flexbox;
@@ -508,6 +509,7 @@ fieldset {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
 
+.archive .content-area,
 .single .content-area,
 .blog .content-area {
   padding: 55px 55px 55px 0px;
@@ -534,38 +536,42 @@ fieldset {
       font-weight: bold; }
       .entry-header .entry-title a:hover {
         color: #a1a1a1; }
-  .entry-header .entry-meta {
-    position: absolute;
-    bottom: 6px;
-    background-color: #248a83;
-    font-family: Novecento Sans;
-    text-transform: uppercase;
-    right: 0;
-    padding: 3px 20px;
+
+.entry-content p {
+  margin: 0; }
+
+.entry-meta {
+  position: absolute;
+  bottom: 6px;
+  background-color: #248a83;
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  right: 0;
+  padding: 3px 20px;
+  color: white; }
+  .entry-meta .comments-link a {
     color: white; }
-    .entry-header .entry-meta .comments-link a {
-      color: white; }
-      .entry-header .entry-meta .comments-link a:hover {
-        color: #a1a1a1; }
+    .entry-meta .comments-link a:hover {
+      color: #a1a1a1; }
+
+.read-more-box {
+  margin: 2rem 0px 4.5rem; }
 
 .read-more {
   border: 1px #2f1339 solid;
   text-align: center;
   width: 140px;
   line-height: 0;
-  margin-bottom: 20px;
-  padding: 5px 10px;
-  cursor: pointer; }
-  .read-more a {
-    font-family: Novecento Sans;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #2f1339; }
+  padding: 12px 20px;
+  cursor: pointer;
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #2f1339; }
   .read-more:hover {
     background-color: #248A83;
-    border: none; }
-    .read-more:hover a {
-      color: white; }
+    border: none;
+    color: white; }
 
 /*Single Blog Post*/
 .social-media {
@@ -593,7 +599,8 @@ fieldset {
     margin-right: 20px; }
 
 /*Shop Archive*/
-.archive .page-header {
+.tax-product-type .page-header,
+.post-type-archive .page-header {
   border-bottom: 1px dashed #c8c8c8;
   padding-bottom: 30px;
   margin-bottom: 30px;
@@ -606,10 +613,12 @@ fieldset {
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.archive .site-content {
+.tax-product-type .site-content,
+.post-type-archive .site-content {
   padding-bottom: 80px; }
 
-.archive h1 {
+.tax-product-type h1,
+.post-type-archive h1 {
   font-family: Novecento Sans;
   text-transform: uppercase;
   padding-left: 40px;
@@ -680,6 +689,15 @@ fieldset {
       height: 100%; }
     .products-grid .product-image img {
       max-width: none; }
+
+/*Blog Archives*/
+.page-title {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 3rem; }
 
 /*About Page*/
 .about-title {
