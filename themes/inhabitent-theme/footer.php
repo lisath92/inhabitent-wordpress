@@ -8,8 +8,8 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
   <div class="wrapper">
     <div class="site-info">
-      <h1>Contact Info
-      </h1>
+      <h2>Contact Info
+      </h2>
       <p>
         <i class="fa fa-envelope" aria-hidden="true">
         </i> info@inhabitent.com
@@ -26,7 +26,7 @@
       </i>
     </div>
     <div class="site-info">
-      <h1>Business Hours</h1>
+      <h2>Business Hours</h2>
         <p>Monday-Friday: 9am to 5pm</p>
         <p>Saturday: 10am to 2pm</p>
         <p>Sunday: Closed</p>
