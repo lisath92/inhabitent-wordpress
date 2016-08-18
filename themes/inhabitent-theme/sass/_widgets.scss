@@ -2,16 +2,33 @@
 # Widgets
 --------------------------------------------------------------*/
 
-.widget {
-	margin: 0 0 $base__space-unit;
+.widget-area {
+  padding: 55px 0px 0px 55px;
+  width: 30%;
+  line-height: 2.5;
+  border-left: $border__solid;
 
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
-}
+  h2{
+    text-transform: uppercase;
+    color: $color__brand-purple;
+    margin: 0px;
+    font-family: Novecento Sans;
+    letter-spacing: 2px;
+  }
 
-/* Search widget. */
-.widget_search .search-submit {
-	display: none;
+  a:hover {
+      color: $color__brand-purple;
+    }
+  
+  .fa-li{
+    padding: 10px 15px 0px 0px;
+  }
+  
+  .widget_archive ul{
+    line-height: $font__line-height-body;
+  }
+
+  .business-hours-items{
+    font-weight: bold;
+  }
 }

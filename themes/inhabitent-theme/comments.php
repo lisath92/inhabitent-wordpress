@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying comments.
+ * Display comments on blog posts
  *
  * @package Inhabitent_Theme
  */
@@ -16,8 +16,6 @@ if ( post_password_required() ) {
 ?>
 
 <div id="comments" class="comments-area">
-
-	<?php // You can start editing here -- including this comment! ?>
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
@@ -39,7 +37,7 @@ if ( post_password_required() ) {
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
-					'callback' => 'red_starter_comment_list'
+					'callback' => 'inhabitent_comment_list'
 				) );
 			?>
 		</ol><!-- .comment-list -->
@@ -66,10 +64,13 @@ if ( post_password_required() ) {
 	<?php endif; ?>
 
 	<?php comment_form( array(
-		'title_reply'          => esc_html( 'Post a Comment' ),
-		'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
-		'label_submit'         => esc_html( 'Submit' ),
-		'cancel_reply_link'    => esc_html( '[Cancel reply]' )
+		'title_reply' => esc_html( 'Post a Comment' ),
+		'comment_notes_before' => '<p>Want to join the discussion? Feel free to contribute!</p>', 
+		'label_submit' => esc_html( 'Submit' ),
+		'cancel_reply_link' => esc_html( '[Cancel reply]' )
 	) ); ?>
 
 </div><!-- #comments -->
+
+<!-- 
+wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ), -->

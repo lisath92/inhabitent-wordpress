@@ -11,13 +11,39 @@ get_header(); ?>
   <section class="hero-image">
    <img src="<?php echo get_template_directory_uri().'/assets/images/inhabitent-logo-full.svg'?>">
  </section>
- <main id="main" class="site-main" role="main">
+ <main id="main" class="wrapper site-main" role="main">
+  <section class="shop-stuff">
+    <h1>Shop Stuff</h1>
+    <div class="shop-categories">
 
-  <section class="news-feed">
-    <h1 class="news-feed-title">Inhabitent Journal</h1>
+      <?php 
+      $category_arr = array(
+        'taxonomy' => 'product-type',
+        'order' => 'ASC',
+        'orderby' => 'name',
+        'hide_empty' => true);
 
-    <?php
-    $args = array('posts_per_page' => 3);
+        $shop_categories = get_terms($category_arr); ?>
+
+        <?php foreach ( $shop_categories as $tag ): ?>
+          <div class="each-category">
+            <img src="<?php echo get_template_directory_uri().'/assets/images/'.$tag->slug.'.svg'; ?>" alt = " "/>
+
+            <p><?php echo $tag->description; ?></p>
+            <div class="stuff">
+              <a href="<?php echo get_category_link($tag); ?>">
+                <?php echo $tag->name.' stuff'; ?></a>
+              </div>
+            </div>
+
+          <?php endforeach; ?> 
+        </div>
+      </section>
+      <section class="news-feed">
+        <h1 class="news-feed-title">Inhabitent Journal</h1>
+
+        <?php
+        $args = array('posts_per_page' => 3);
 
    $news_feed = get_posts( $args ); // returns an array of posts
    ?>
@@ -32,33 +58,9 @@ get_header(); ?>
 
  </section>
 
- <section class="shop-categories">
-  <?php 
-  $category_arr = array(
-    'taxonomy' => 'product-type',
-    'order' => 'ASC',
-    'orderby' => 'name',
-    'hide_empty' => true);
+ 
 
-
-
-  $shop_categories = get_terms($category_arr); ?>
-
-
-  <?php foreach ( $shop_categories as $tag ): ?>
-      
-      <img src="<?php echo get_template_directory_uri().'/assets/images/'.$tag->slug.'.svg'; ?>" alt = " "/>
-
-      <p><?php echo $tag->description; ?></p>
-      <div class="stuff">
-      <a href="<?php echo get_category_link($tag); ?>">
-        <?php echo $tag->name.' stuff'; ?></a>
-      </div>
-
-  <?php endforeach; ?> 
-</section>
-
-<p>content content content content content content</p>
+ <p>content content content content content content</p>
 </main><!-- #main -->
 </div><!-- #primary -->
 <?php get_footer(); ?>

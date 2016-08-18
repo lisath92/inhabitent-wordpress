@@ -285,8 +285,33 @@ th {
   font-style: italic; }
 
 /*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+body {
+  font-family: Merriweather;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #404040; }
+
+a {
+  text-decoration: none;
+  color: #248A83; }
+  a:hover {
+    color: #2f1339; }
+
+.wrapper {
+  width: 1120px;
+  margin: 0 auto; }
+
+.site-content {
+  padding-top: 45px; }
+
+ul, ol {
+  list-style-type: none; }
+
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -294,7 +319,7 @@ img {
   /* Adhere to container width. */ }
 
 /*--------------------------------------------------------------
-# Inputs and Buttons
+# Inputs and Comment Forms
 --------------------------------------------------------------*/
 /*Search Bar*/
 fieldset {
@@ -414,40 +439,33 @@ fieldset {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
-
-/* Search widget. */
-.widget_search .search-submit {
-  display: none; }
+.widget-area {
+  padding: 55px 0px 0px 55px;
+  width: 30%;
+  line-height: 2.5;
+  border-left: 1px solid #e1e1e1; }
+  .widget-area h2 {
+    text-transform: uppercase;
+    color: #2f1339;
+    margin: 0px;
+    font-family: Novecento Sans;
+    letter-spacing: 2px; }
+  .widget-area a:hover {
+    color: #2f1339; }
+  .widget-area .fa-li {
+    padding: 10px 15px 0px 0px; }
+  .widget-area .widget_archive ul {
+    line-height: 1.5; }
+  .widget-area .business-hours-items {
+    font-weight: bold; }
 
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-/*Body*/
-body {
-  font-family: Merriweather;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #404040; }
-
-a {
-  text-decoration: none; }
-
-.wrapper {
-  width: 1120px;
-  margin: 0 auto; }
-
-.site-content {
-  padding-top: 45px; }
-
 /*Fixed Header*/
 .site-header {
   background-color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px #a1a1a1 solid;
+  border-bottom: 1px solid #e1e1e1;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -468,10 +486,7 @@ a {
     .site-header .tent-logo a {
       width: 50px; }
   .site-header a {
-    width: 80px;
-    color: #248A83; }
-    .site-header a:hover {
-      color: #2f1339; }
+    width: 80px; }
 
 /*Back-end User Fixed Header*/
 .logged-in .site-header {
@@ -509,8 +524,7 @@ a {
 .single .content-area,
 .blog .content-area {
   padding: 55px 55px 55px 0px;
-  width: 94%;
-  border-right: 1px #a1a1a1 solid; }
+  width: 94%; }
 
 .entry-header {
   position: relative; }
@@ -587,14 +601,12 @@ a {
   font-family: Novecento Sans;
   text-transform: uppercase;
   margin-top: 20px; }
-  .entry-footer a {
-    color: #248A83; }
   .entry-footer .cat-links {
     margin-right: 20px; }
 
 /*Shop Archive*/
 .archive .page-header {
-  border-bottom: 1px lightgray dotted;
+  border-bottom: 1px dashed #c8c8c8;
   padding-bottom: 30px;
   margin-bottom: 30px;
   display: -ms-flexbox;
@@ -619,7 +631,6 @@ a {
 .shop-nav {
   font-family: Novecento Sans;
   text-transform: uppercase;
-  list-style-type: none;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
@@ -634,10 +645,7 @@ a {
     text-align: center;
     margin: 0 1.5rem; }
   .shop-nav a {
-    width: 1rem;
-    color: #248A83; }
-    .shop-nav a:hover {
-      color: #2f1339; }
+    width: 1rem; }
 
 .products-grid {
   display: -ms-flexbox;
@@ -653,7 +661,7 @@ a {
     padding: 10px;
     width: 23%; }
   .products-grid .product-description {
-    border: 1px lightgray solid;
+    border: 1px solid #e1e1e1;
     border-top: 5px lightgray solid;
     text-align: center;
     display: -ms-flexbox;
@@ -702,29 +710,6 @@ a {
     font-size: 2.5rem;
     text-transform: uppercase; }
 
-/*Sidebar*/
-.widget-area {
-  padding: 55px 0px 0px 55px;
-  width: 30%;
-  line-height: 2.5; }
-  .widget-area h2 {
-    text-transform: uppercase;
-    color: #2f1339;
-    margin: 0px;
-    font-family: Novecento Sans;
-    letter-spacing: 2px; }
-  .widget-area a {
-    color: #248A83; }
-    .widget-area a:hover {
-      color: #2f1339; }
-  .widget-area .fa-li {
-    padding: 10px 15px 0px 0px; }
-  .widget-area .widget_archive ul {
-    list-style-type: none;
-    line-height: 1.5; }
-  .widget-area .business-hours-items {
-    font-weight: bold; }
-
 /*Footer*/
 .site-footer {
   background: url("../../assets/images/dark-wood2x.png");
@@ -758,6 +743,59 @@ a {
     font-family: Novecento Sans; }
 
 /*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+.comments-area {
+  margin-top: 50px; }
+  .comments-area .comment-body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 30px 0px; }
+  .comments-area .comments-title {
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 0; }
+  .comments-area img {
+    border-radius: 35px; }
+
+.comment-author {
+  font-weight: bold;
+  font-size: 1.5rem; }
+  .comment-author cite {
+    font-style: normal; }
+
+.comment-metadata {
+  color: #a1a1a1; }
+
+.children .comment-body {
+  border-top: 1px solid #e1e1e1; }
+
+.comment-list {
+  padding: 0;
+  margin: 0; }
+  .comment-list > li {
+    border-bottom: 1px solid #e1e1e1; }
+
+.comment-content {
+  margin-left: 20px; }
+
+/*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.shop-categories {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex: row nowrap;
+      flex: row nowrap; }
+  .shop-categories .each-category {
+    width: 20%; }
+  .shop-categories img {
+    width: 300px; }

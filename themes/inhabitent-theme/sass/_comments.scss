@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+.comments-area {
+  margin-top: 50px;
+
+  .comment-body{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 30px 0px;
+  }
+
+  .comments-title {
+    @include font-uppercase;
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  img{
+    border-radius: 35px;
+  }
+}
+
+.comment-author {
+  font-weight: bold;
+  font-size: 1.5rem;
+  
+  cite{
+    font-style: normal;
+  }
+}
+
+.comment-metadata{
+  color: $color__brand-lightgray;
+}
+
+.children .comment-body{
+  border-top: $border__solid;
+}
+
+
+.comment-list {
+  padding: 0;
+  margin: 0;
+
+  &>li{
+    border-bottom: $border__solid;
+  }
+}
+
+.comment-content{
+  margin-left: 20px;
+}
+
+
+
+

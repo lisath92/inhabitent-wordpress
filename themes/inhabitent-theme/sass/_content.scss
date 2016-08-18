@@ -1,33 +1,10 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-
-/*Body*/
-body {
-	font-family: Merriweather;
-	font-size: 16px;
-	line-height: $font__line-height-body;
-	color: $color__text-main;
-}
-
-a{
-	text-decoration: none;
-}
-
-.wrapper{
-	width: 1120px;
-	margin:0 auto;
-}
-
-.site-content {
-	padding-top: 45px;
-}
-
-
 /*Fixed Header*/
 .site-header{
 	background-color: rgba(255,255,255,0.7);
-	border-bottom: 1px $color__brand-lightgray solid;
+	border-bottom: $border__solid;
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -53,11 +30,6 @@ a{
 
 	a {
 		width: 80px;
-		color: $color__brand;
-		
-		&:hover {
-			color: $color__brand-purple;
-		}
 	}
 }
 
@@ -87,13 +59,11 @@ a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 	img{
 		width: 280px;
 	}
 }
-
-
-
 
 /*Posts Home Page*/
 
@@ -109,7 +79,6 @@ a{
 	.content-area{
 		padding: 55px 55px 55px 0px;
 		width: 94%;
-		border-right: 1px $color__brand-lightgray solid;
 	}
 }
 
@@ -217,10 +186,6 @@ a{
 .entry-footer {
 	@include font-uppercase;
 	margin-top: 20px;
-	
-	a{
-		color: $color__brand;
-	}
 
 	.cat-links{
 		margin-right: 20px;
@@ -230,7 +195,7 @@ a{
 /*Shop Archive*/
 .archive {
 	.page-header{
-		border-bottom: 1px lightgray dotted;
+		border-bottom: $border__dash;
 		padding-bottom: 30px;
 		margin-bottom: 30px;
 		display: flex;
@@ -252,7 +217,6 @@ a{
 
 .shop-nav{
 	@include font-uppercase;
-	list-style-type: none;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
@@ -267,12 +231,6 @@ a{
 
 	a {
 		width: 1rem;
-
-		color: $color__brand;
-
-		&:hover{
-			color: $color__brand-purple;
-		}
 	}
 }
 
@@ -290,7 +248,7 @@ a{
 	}
 
 	.product-description{
-		border: 1px lightgray solid;
+		border: $border__solid;
 		border-top: 5px lightgray solid;
 		text-align: center;
 		display: flex;
@@ -328,8 +286,6 @@ a{
 	}
 }
 
-
-
 /*About Page*/
 .about-title{
 	color: white;
@@ -348,43 +304,6 @@ a{
 		text-align: center;
 		font-size: 2.5rem;
 		text-transform: uppercase;
-	}
-}
-
-
-/*Sidebar*/
-.widget-area {
-	padding: 55px 0px 0px 55px;
-	width: 30%;
-	line-height: 2.5;
-	h2{
-		text-transform: uppercase;
-		color: $color__brand-purple;
-		margin: 0px;
-		font-family: Novecento Sans;
-		letter-spacing: 2px;
-	}
-
-	a {
-		color: $color__brand;
-
-		&:hover {
-			color: $color__brand-purple;
-		}
-	}
-
-	
-	.fa-li{
-		padding: 10px 15px 0px 0px;
-	}
-	
-	.widget_archive ul{
-		list-style-type: none;
-		line-height: $font__line-height-body;
-	}
-
-	.business-hours-items{
-		font-weight: bold;
 	}
 }
 
