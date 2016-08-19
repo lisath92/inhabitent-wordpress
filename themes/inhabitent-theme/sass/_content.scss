@@ -98,9 +98,9 @@
 	}
 }
 
-.entry-content p {
-	margin: 0;
-}
+// .entry-content p {
+// 	margin: 0;
+// }
 
 .entry-meta {
 	position: absolute;
@@ -251,6 +251,7 @@
 		font-weight: normal;
 		overflow: hidden;
 		white-space: nowrap;
+		padding: 10px;
 
 		&:after{
 			content: "........................ ";
@@ -272,6 +273,36 @@
 		img {
 			max-width: none;
 		}
+	}
+}
+
+/*Single Products*/
+.single-product .site-main{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.product-full-info {
+	width: 57%;
+	margin-left: 3rem;
+
+	h1{
+		@include font-uppercase;
+		color: $color__brand-orange;
+		font-size: 2.5rem;
+		letter-spacing: 2px;
+		margin:0 0 15px;
+	}
+
+	h2{
+		@include font-uppercase;
+		font-weight: normal;
+		font-size: 1.7rem;
+		margin-top: 0;
+	}
+	p {
+		margin: 0;
 	}
 }
 
