@@ -9,7 +9,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html( 'Nothing Found' ); ?></h1>
+		<h1 class="page-title"><?php echo esc_html( 'Nothing Found' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -17,12 +17,12 @@
 
 			<p><?php printf( wp_kses( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
 
-		<?php elseif ( is_search() || is_404() ) : ?>
+		<?php elseif ( is_search() ) : ?>
 
 			<p><?php echo esc_html( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.' ); ?></p>
-				<input type="search" class="search-now" placeholder="Type and hit enter ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />		
-
-			<?php //get_search_form(); ?>
+			<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+				<input type="search" class="search-now" placeholder="Type and hit enter ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+			</form>
 
 		<?php else : ?>
 

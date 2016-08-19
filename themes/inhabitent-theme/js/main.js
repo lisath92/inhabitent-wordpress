@@ -1,10 +1,10 @@
 $(function() {
 
+var searchButton = $('.search-submit');
+        var searchBar = $('.search-field');
     //Opens search bar once search icon has been clicked
     $('body').on('click', function(event) {
         console.log(event.target);
-        var searchButton = $('.search-submit');
-        var searchBar = $('.search-field');
 
         if ($(event.target).parents().hasClass('search-submit')) {
             event.preventDefault();

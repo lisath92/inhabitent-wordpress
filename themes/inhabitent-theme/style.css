@@ -42,6 +42,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.error404 .content-area {
+  margin-bottom: 2rem; }
+  .error404 .content-area ul {
+    padding: 0;
+    line-height: 1.75; }
+  .error404 .content-area h2 {
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding-top: 20px; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -569,6 +581,7 @@ input[type="submit"] {
   padding-top: 0; }
 
 /*Blogs Page*/
+.error404 .site-content,
 .search .site-content,
 .page-template-page-contact .site-content,
 .archive .site-content,
@@ -581,6 +594,7 @@ input[type="submit"] {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
 
+.error404 .content-area,
 .search .content-area,
 .page-template-page-contact .content-area,
 .archive .content-area,

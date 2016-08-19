@@ -9,45 +9,40 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="wrapper site-main" role="main">
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
-				</header><!-- .page-header -->
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		<section class="error-404 not-found">
+			<header class="page-header">
+				<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
+			</header><!-- .page-header -->
 
-				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
+			<div class="page-content">
+				<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
+				<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+					<input type="search" class="search-now" placeholder="Type and hit enter ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+				</form>	
+				<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-					<?php //get_template_part( 'template-parts/content', 'none' ); ?>
-					<div class="search-tab">
-					<input type="search" class="search-now" placeholder="Type and hit enter ..."  name="s" title="Search for:" />		
-					</div>
-
-					<?php //get_search_form(); ?>
-
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-					<?php if ( inhabitent_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+				<?php if ( inhabitent_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">
 						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
 						<ul>
-						<?php
+							<?php
 							wp_list_categories( array(
 								'orderby'    => 'count',
 								'order'      => 'DESC',
 								'show_count' => 1,
 								'title_li'   => '',
 								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
+								) );
+								?>
+							</ul>
+						</div><!-- .widget -->
 					<?php endif; ?>
 
 					<?php
-						$archive_content = '<p>' . sprintf( esc_html( 'Try looking in the monthly archives. %1$s' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
+					$archive_content = '<p>' . sprintf( esc_html( 'Try looking in the monthly archives. %1$s' ), convert_smilies( ':)' ) ) . '</p>';
+					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
 
 				</div><!-- .page-content -->
@@ -55,5 +50,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_footer(); ?>
+	<?php get_sidebar(); ?>
+	<?php get_footer(); ?>
