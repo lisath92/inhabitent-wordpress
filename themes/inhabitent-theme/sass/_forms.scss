@@ -5,12 +5,13 @@
 fieldset {
 	border: 0;
 
-	input[type="search"]{
+	.search-field{
 		display:none;
 		text-transform: uppercase;
 		font-family: Novecento Sans;
 		border: none;
 		background: transparent;
+		color: black;
 		
 		&:focus{
 			outline: none;

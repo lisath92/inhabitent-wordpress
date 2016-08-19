@@ -11,7 +11,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="wrapper site-main" role="main">
-
 			<section class="error-404 not-found">
 				<header class="page-header">
 					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
@@ -20,7 +19,12 @@ get_header(); ?>
 				<div class="page-content">
 					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
 
-					<?php get_search_form(); ?>
+					<?php //get_template_part( 'template-parts/content', 'none' ); ?>
+					<div class="search-tab">
+					<input type="search" class="search-now" placeholder="Type and hit enter ..."  name="s" title="Search for:" />		
+					</div>
+
+					<?php //get_search_form(); ?>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 

@@ -42,15 +42,19 @@
 
 
 /*Front Page*/
-.page-template-page-about .site-content{
-	width: 100%;
-	margin: 0;
-	padding-top:0;
+.page-template-page-about,
+.home {
+	.site-content{
+		width: 100%;
+		margin: 0;
+		padding-top:0;
+	}
 }
 
 /*Blogs Page*/
 
 //List of blog posts
+.search,
 .page-template-page-contact,	
 .archive,
 .single,
@@ -392,4 +396,16 @@
 		margin-top: 0;
 		color: black;
 	}
+}
+
+/*Search Results*/
+.search .entry-header{
+	@include font-uppercase;
+	color: $color__brand;
+	font-size: 1.5rem;
+}
+
+.search-meta {
+	color: black;
+	font-size: 1rem;
 }

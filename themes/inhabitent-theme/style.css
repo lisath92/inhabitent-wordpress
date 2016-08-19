@@ -324,13 +324,14 @@ img {
 /*Search Bar*/
 fieldset {
   border: 0; }
-  fieldset input[type="search"] {
+  fieldset .search-field {
     display: none;
     text-transform: uppercase;
     font-family: Novecento Sans;
     border: none;
-    background: transparent; }
-    fieldset input[type="search"]:focus {
+    background: transparent;
+    color: black; }
+    fieldset .search-field:focus {
       outline: none; }
   fieldset .search-submit {
     background-color: transparent;
@@ -561,12 +562,14 @@ input[type="submit"] {
   top: 32px; }
 
 /*Front Page*/
-.page-template-page-about .site-content {
+.page-template-page-about .site-content,
+.home .site-content {
   width: 100%;
   margin: 0;
   padding-top: 0; }
 
 /*Blogs Page*/
+.search .site-content,
 .page-template-page-contact .site-content,
 .archive .site-content,
 .single .site-content,
@@ -578,6 +581,7 @@ input[type="submit"] {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
 
+.search .content-area,
 .page-template-page-contact .content-area,
 .archive .content-area,
 .single .content-area,
@@ -856,6 +860,17 @@ input[type="submit"] {
 .page-template-page-contact .entry-title {
   margin-top: 0;
   color: black; }
+
+/*Search Results*/
+.search .entry-header {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  color: #248A83;
+  font-size: 1.5rem; }
+
+.search-meta {
+  color: black;
+  font-size: 1rem; }
 
 /*--------------------------------------------------------------
 # Comments
