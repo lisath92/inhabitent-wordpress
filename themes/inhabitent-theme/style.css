@@ -302,6 +302,11 @@ a {
   a:hover {
     color: #2f1339; }
 
+h1,
+h2,
+h3 {
+  margin: 0; }
+
 .wrapper {
   width: 1120px;
   margin: 0 auto; }
@@ -339,6 +344,69 @@ fieldset {
     cursor: pointer; }
     fieldset .search-submit:focus {
       outline: none; }
+
+/*Comment Form*/
+.comment-respond h3 {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 20px 0; }
+
+.comment-respond textarea {
+  width: 765px; }
+
+.comment-respond label {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  margin-bottom: 5px; }
+
+.comment-respond input,
+.comment-respond textarea {
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1; }
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  width: 49%; }
+  .comment-form-author label,
+  .comment-form-email label,
+  .comment-form-url label {
+    width: 100%;
+    margin-bottom: 8px; }
+  .comment-form-author input,
+  .comment-form-email input,
+  .comment-form-url input {
+    width: 98%;
+    font-size: 1rem;
+    padding: 7px;
+    margin-bottom: 10px; }
+
+.comment-form-author {
+  float: left;
+  overflow: hidden; }
+
+.comment-form-email {
+  float: right;
+  overflow: hidden; }
+
+.comment-form-url input {
+  width: 200%; }
+
+input[type="submit"] {
+  background-color: #248A83;
+  color: white;
+  padding: 8px 20px;
+  font-family: Novecento Sans;
+  text-transform: uppercase; }
+  input[type="submit"]:hover {
+    background-color: #19625d; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -697,7 +765,7 @@ fieldset {
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 1rem;
   font-size: 2.5rem;
-  margin-bottom: 3rem; }
+  margin: 0 0 3rem; }
 
 /*About Page*/
 .about-title {

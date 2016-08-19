@@ -28,3 +28,75 @@ fieldset {
 	}
 }
 
+
+/*Comment Form*/
+.comment-respond {
+	
+	
+	h3{
+		@include font-uppercase;
+		font-size: 2rem; 
+		margin: 20px 0;
+	}
+
+	textarea {
+		width: 765px;
+	}
+
+	label {
+		@include font-uppercase;
+		margin-bottom: 5px;
+	}
+
+	input,
+	textarea{
+		background-color: #f4f4f4;
+		border: $border__solid;
+	}
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		width: 49%;
+
+		label {
+			width: 100%;
+			margin-bottom: 8px;
+		}
+
+		input {
+		width: 98%;
+		font-size: 1rem;
+		padding: 7px;
+		margin-bottom: 10px;
+	}
+}
+
+.comment-form-author {
+	float: left;
+	overflow: hidden;
+}
+
+.comment-form-email {
+	float: right;
+	overflow: hidden;
+}
+
+.comment-form-url input {
+	width: 200%;
+}
+
+input[type="submit"] {
+	background-color: $color__brand;
+	color: white;
+	padding: 8px 20px;
+	@include font-uppercase;
+
+	&:hover {
+		background-color: darken($color__brand, 10%);
+	}
+}
