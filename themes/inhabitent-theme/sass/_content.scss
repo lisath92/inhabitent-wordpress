@@ -42,7 +42,7 @@
 
 
 /*Front Page*/
-.page .site-content{
+.page-template-page-about .site-content{
 	width: 100%;
 	margin: 0;
 	padding-top:0;
@@ -51,6 +51,7 @@
 /*Blogs Page*/
 
 //List of blog posts
+.page-template-page-contact,	
 .archive,
 .single,
 .blog {
@@ -97,10 +98,6 @@
 		}
 	}
 }
-
-// .entry-content p {
-// 	margin: 0;
-// }
 
 .entry-meta {
 	position: absolute;
@@ -377,4 +374,22 @@
 	color: white;
 	text-transform: uppercase;
 	font-family: Novecento Sans;
+}
+
+
+/*Contact Us*/
+.page-template-page-contact {
+
+	h1 {
+		@include font-uppercase;
+		font-size: 2rem;
+		color: $color__brand-purple;
+		
+
+	}
+
+	.entry-title {
+		margin-top: 0;
+		color: black;
+	}
 }

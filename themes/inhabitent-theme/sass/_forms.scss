@@ -30,8 +30,7 @@ fieldset {
 
 
 /*Comment Form*/
-.comment-respond {
-	
+form{
 	
 	h3{
 		@include font-uppercase;
@@ -45,13 +44,23 @@ fieldset {
 
 	label {
 		@include font-uppercase;
-		margin-bottom: 5px;
 	}
 
 	input,
 	textarea{
 		background-color: #f4f4f4;
 		border: $border__solid;
+		margin-top: 10px;
+	}
+
+	input {
+		font-size: 1rem;
+		padding: 7px;
+
+	}
+
+	.required {
+		color: red;
 	}
 }
 
@@ -70,8 +79,6 @@ fieldset {
 
 		input {
 		width: 98%;
-		font-size: 1rem;
-		padding: 7px;
 		margin-bottom: 10px;
 	}
 }
