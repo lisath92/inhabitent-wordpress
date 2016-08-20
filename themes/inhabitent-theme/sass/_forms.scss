@@ -7,8 +7,7 @@ fieldset {
 
 	.search-field{
 		display:none;
-		text-transform: uppercase;
-		font-family: Novecento Sans;
+		@include font-uppercase;
 		border: none;
 		background: transparent;
 		color: black;

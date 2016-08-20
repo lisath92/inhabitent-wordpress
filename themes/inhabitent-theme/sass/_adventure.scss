@@ -1,0 +1,48 @@
+.adventures-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.adventure {
+  position: relative;
+  width: 47%;
+  height: 550px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+
+  .adventure-img {
+    display: flex;
+    justify-content:center;
+    overflow: hidden; 
+    max-height: 550px;
+    background: 
+    linear-gradient(black,black, 0.4);
+
+    img {
+      max-height: none;
+      max-width: 900px;
+    }
+  }
+}
+
+.adventure-info  {
+  position: absolute;
+  padding:30px;
+  top: 0;
+
+  h2 a {
+    font-family: Merriweather;
+    color: white;
+    font-weight: normal;
+    font-size: 3rem;
+    margin: 30px 0px;
+  }
+
+  .read-more {
+    border-color: white;
+    color: white;
+  }
+}

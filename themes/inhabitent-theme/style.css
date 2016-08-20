@@ -338,8 +338,8 @@ fieldset {
   border: 0; }
   fieldset .search-field {
     display: none;
-    text-transform: uppercase;
     font-family: Novecento Sans;
+    text-transform: uppercase;
     border: none;
     background: transparent;
     color: black; }
@@ -1021,3 +1021,45 @@ input[type="submit"] {
   font-size: 13px;
   padding-top: 10px;
   margin-bottom: 0; }
+
+.adventures-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.adventure {
+  position: relative;
+  width: 47%;
+  height: 550px;
+  padding-right: 25px;
+  padding-bottom: 25px; }
+  .adventure .adventure-img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    overflow: hidden;
+    max-height: 550px;
+    background: linear-gradient(black, black, 0.4); }
+    .adventure .adventure-img img {
+      max-height: none;
+      max-width: 900px; }
+
+.adventure-info {
+  position: absolute;
+  padding: 30px;
+  top: 0; }
+  .adventure-info h2 a {
+    font-family: Merriweather;
+    color: white;
+    font-weight: normal;
+    font-size: 3rem;
+    margin: 30px 0px; }
+  .adventure-info .read-more {
+    border-color: white;
+    color: white; }
