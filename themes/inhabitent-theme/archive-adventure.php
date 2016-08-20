@@ -9,6 +9,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
   <main id="main" class="wrapper site-main" role="main">
+  <h1 class="adventure-header">Latest Adventures</h1>
     <section class="adventures-grid">
       <?php /* Start the Loop */ ?>
       <?php while ( have_posts() ) : the_post(); ?>

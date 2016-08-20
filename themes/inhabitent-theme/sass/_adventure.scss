@@ -1,4 +1,13 @@
+.adventure-header {
+  border-bottom: 1px $border__solid dashed;
+  @include font-uppercase;
+  text-align: center;
+  padding: 30px 0px;
+  margin-bottom: 40px;
+}
+
 .adventures-grid {
+  margin-top: 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
