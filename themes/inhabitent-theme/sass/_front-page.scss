@@ -129,7 +129,6 @@
 
     &:nth-child(2) {
       height: 230px;
-      background-color: red;
       border-bottom: 25px white solid;
 
       .adventure-img {
@@ -161,9 +160,11 @@
       img {
         width: 600px;
 
+
       }
       h2 a {
         font-size: 1.5rem;
+        z-index: -1;
       }
 
     }
@@ -179,6 +180,10 @@
     color: white;
     padding: 13px 23px;
     font-size: 1.3rem;
+
+    &:hover {
+      background-color: darken($color__brand, 10%);
+    }
 
   }
 }

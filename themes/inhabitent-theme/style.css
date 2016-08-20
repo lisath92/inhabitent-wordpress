@@ -1038,7 +1038,6 @@ input[type="submit"] {
   overflow: hidden; }
   .front-page-ads .adventure:nth-child(2) {
     height: 230px;
-    background-color: red;
     border-bottom: 25px white solid; }
     .front-page-ads .adventure:nth-child(2) .adventure-img {
       position: absolute;
@@ -1058,7 +1057,8 @@ input[type="submit"] {
     .front-page-ads .adventure:nth-child(3) img, .front-page-ads .adventure:last-child img {
       width: 600px; }
     .front-page-ads .adventure:nth-child(3) h2 a, .front-page-ads .adventure:last-child h2 a {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      z-index: -1; }
 
 .more-adventures {
   margin-bottom: 60px; }
@@ -1070,6 +1070,8 @@ input[type="submit"] {
     color: white;
     padding: 13px 23px;
     font-size: 1.3rem; }
+    .more-adventures a:hover {
+      background-color: #19625d; }
 
 .adventure-header {
   border-bottom: 1px 1px solid #e1e1e1 dashed;
@@ -1103,10 +1105,11 @@ input[type="submit"] {
         justify-content: center;
     overflow: hidden;
     max-height: 550px;
-    background: linear-gradient(black, black, 0.4); }
+    background-color: rgba(0, 0, 0, 0.5); }
     .adventure .adventure-img img {
       max-height: none;
-      max-width: 900px; }
+      max-width: 900px;
+      z-index: -1; }
 
 .adventure-info {
   position: absolute;
