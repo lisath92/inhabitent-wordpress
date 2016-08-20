@@ -115,3 +115,71 @@
   margin-bottom: 0;
 
 }
+
+/*Latest Adventures*/
+.clearfix:after {
+  @include clearfix;
+}
+
+.front-page-ads {
+
+  .adventure{
+    float: left;
+    overflow: hidden;
+
+    &:nth-child(2) {
+      height: 230px;
+      background-color: red;
+      border-bottom: 25px white solid;
+
+      .adventure-img {
+        position: absolute;
+        bottom: -40%;
+        right: -35%;
+      }
+
+      h2 a {
+        font-size: 2.5rem;
+      }
+    }
+
+    &:nth-child(3) {
+      border-right: 25px white solid;
+    }
+
+    &:nth-child(3),
+    &:last-child {
+      width: 21.3%;
+      height: 245px;
+
+      .adventure-img {
+        position: absolute;
+        right: -63%;
+        bottom: -10%;
+      }
+
+      img {
+        width: 600px;
+
+      }
+      h2 a {
+        font-size: 1.5rem;
+      }
+
+    }
+  }
+}
+
+.more-adventures {
+  margin-bottom: 60px;
+  a{
+    @include font-uppercase;
+    background-color: $color__brand;
+    border: none;
+    color: white;
+    padding: 13px 23px;
+    font-size: 1.3rem;
+
+  }
+}
+

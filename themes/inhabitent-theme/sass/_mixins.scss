@@ -17,3 +17,13 @@
     text-transform: uppercase;
 }
 
+//Clearfix
+@mixin clearfix{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}

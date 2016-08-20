@@ -378,7 +378,7 @@ form input {
   padding: 7px; }
 
 form .required {
-  color: red; }
+  color: #d99054; }
 
 .comment-form-author,
 .comment-form-email,
@@ -832,6 +832,7 @@ input[type="submit"] {
 
 /*Footer*/
 .site-footer {
+  clear: both;
   background: url("../../assets/images/dark-wood2x.png");
   width: 100%;
   height: 300px; }
@@ -1021,6 +1022,54 @@ input[type="submit"] {
   font-size: 13px;
   padding-top: 10px;
   margin-bottom: 0; }
+
+/*Latest Adventures*/
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+.front-page-ads .adventure {
+  float: left;
+  overflow: hidden; }
+  .front-page-ads .adventure:nth-child(2) {
+    height: 230px;
+    background-color: red;
+    border-bottom: 25px white solid; }
+    .front-page-ads .adventure:nth-child(2) .adventure-img {
+      position: absolute;
+      bottom: -40%;
+      right: -35%; }
+    .front-page-ads .adventure:nth-child(2) h2 a {
+      font-size: 2.5rem; }
+  .front-page-ads .adventure:nth-child(3) {
+    border-right: 25px white solid; }
+  .front-page-ads .adventure:nth-child(3), .front-page-ads .adventure:last-child {
+    width: 21.3%;
+    height: 245px; }
+    .front-page-ads .adventure:nth-child(3) .adventure-img, .front-page-ads .adventure:last-child .adventure-img {
+      position: absolute;
+      right: -63%;
+      bottom: -10%; }
+    .front-page-ads .adventure:nth-child(3) img, .front-page-ads .adventure:last-child img {
+      width: 600px; }
+    .front-page-ads .adventure:nth-child(3) h2 a, .front-page-ads .adventure:last-child h2 a {
+      font-size: 1.5rem; }
+
+.more-adventures {
+  margin-bottom: 60px; }
+  .more-adventures a {
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    background-color: #248A83;
+    border: none;
+    color: white;
+    padding: 13px 23px;
+    font-size: 1.3rem; }
 
 .adventure-header {
   border-bottom: 1px 1px solid #e1e1e1 dashed;
