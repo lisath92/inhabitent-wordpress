@@ -3,35 +3,66 @@
 --------------------------------------------------------------*/
 /*Fixed Header*/
 .site-header{
-	background-color: rgba(255,255,255,0.7);
-	border-bottom: $border__solid;
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	width: 100%;
 	z-index: 2;
-	
-	.main-navigation {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		height: 45px;
-		text-transform: uppercase;
-		font-family: Novecento Sans;
-		text-align: center;
-	}
-	
+	transition: ease-in-out;
 	.tent-logo {
 		margin-right: auto;
 
-		a {
+		a h1 {
+			background: 
+			url("../../assets/images/inhabitent-logo-tent-white.svg")
+			center/50px 50px
+			no-repeat;
+			height: 50px;
 			width: 50px;
+			overflow: hidden;
+			text-indent: 80%;
 		}
 	}
 
 	a {
+		color: white;
 		width: 80px;
 	}
+
+	input[type="search"],
+	.fa {
+		color: white;
+	}
 }
+.main-navigation {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 45px;
+	text-transform: uppercase;
+	font-family: Novecento Sans;
+	text-align: center;
+}
+
+
+.new-header {
+	background-color: rgba(255,255,255,0.7);
+	border-bottom: $border__solid;
+	z-index : 2;
+	color: $color__brand;
+	position: fixed;
+
+	.tent-logo a h1 {
+		background-image: 
+		url("../../assets/images/inhabitent-logo-tent.svg");
+	}
+	a,
+	.fa,
+	input[type="search"] {
+		color: $color__brand;
+	}
+}
+
+
 
 /*Back-end User Fixed Header*/
 .logged-in {

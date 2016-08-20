@@ -545,29 +545,50 @@ input[type="submit"] {
 --------------------------------------------------------------*/
 /*Fixed Header*/
 .site-header {
-  background-color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid #e1e1e1;
-  position: fixed;
+  position: absolute;
   top: 0px;
   width: 100%;
-  z-index: 2; }
-  .site-header .main-navigation {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
-    -ms-flex-align: center;
-        align-items: center;
-    height: 45px;
-    text-transform: uppercase;
-    font-family: Novecento Sans;
-    text-align: center; }
+  z-index: 2;
+  transition: ease-in-out; }
   .site-header .tent-logo {
     margin-right: auto; }
-    .site-header .tent-logo a {
-      width: 50px; }
+    .site-header .tent-logo a h1 {
+      background: url("../../assets/images/inhabitent-logo-tent-white.svg") center/50px 50px no-repeat;
+      height: 50px;
+      width: 50px;
+      overflow: hidden;
+      text-indent: 80%; }
   .site-header a {
+    color: white;
     width: 80px; }
+  .site-header input[type="search"],
+  .site-header .fa {
+    color: white; }
+
+.main-navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 45px;
+  text-transform: uppercase;
+  font-family: Novecento Sans;
+  text-align: center; }
+
+.new-header {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid #e1e1e1;
+  z-index: 2;
+  color: #248A83;
+  position: fixed; }
+  .new-header .tent-logo a h1 {
+    background-image: url("../../assets/images/inhabitent-logo-tent.svg"); }
+  .new-header a,
+  .new-header .fa,
+  .new-header input[type="search"] {
+    color: #248A83; }
 
 /*Back-end User Fixed Header*/
 .logged-in .site-header {

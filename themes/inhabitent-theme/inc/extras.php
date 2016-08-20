@@ -80,7 +80,7 @@ function inhabitent_about_inline_styles() {
       return;
     }
             $css .= '
-                #about-hero-image { 
+                #about-hero { 
                   background:
                   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
                   url('.$logo.') no-repeat;

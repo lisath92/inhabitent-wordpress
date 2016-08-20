@@ -12,7 +12,7 @@ get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
       <?php //while ( have_posts() ) : the_post(); ?>
-        <div id="about-hero-image">
+        <div id = "about-hero" class="hero-image">
         <h2 class="about-title"><?php echo CFS()->get('header')?></h2>
       </div>
       <div class="wrapper about-content">
