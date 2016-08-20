@@ -55,3 +55,42 @@
     color: white;
   }
 }
+
+/*Single Adventure Post*/
+.single-adventure {
+  .site-content{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+  .content-area {
+    width: 100%;
+    padding: 0;
+  }
+
+}
+
+.single-adventure-image {
+  width: 100%;
+  height: auto;
+}
+
+.adventure-full-info {
+  width: 60%;
+  margin-bottom: 3rem;
+
+  h1 {
+    text-align: left;
+    border: none;
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    line-height: 1.25;
+  }
+
+  h3 {
+    @include font-uppercase;
+    font-weight: normal;
+    margin-top: 0;
+  }
+}
