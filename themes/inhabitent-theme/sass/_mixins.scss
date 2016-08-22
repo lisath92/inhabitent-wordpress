@@ -27,3 +27,9 @@
   height: 0;
   overflow: hidden;
 }
+
+//Flex display
+@mixin flex-display($justify-spacing) {
+  display: flex;
+  justify-content: $justify-spacing;
+}

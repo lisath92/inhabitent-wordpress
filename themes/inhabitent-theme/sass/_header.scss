@@ -1,0 +1,71 @@
+.site-header {
+  background-color: rgba(255,255,255,0.7);
+  border-bottom: $border__solid;
+  z-index : 2;
+  color: $color__brand;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  .tent-logo {
+    margin-right: auto;
+    a h1 {
+      background: 
+      url("../../assets/images/inhabitent-logo-tent.svg")
+      center/50px 50px
+      no-repeat;
+      height: 50px;
+      width: 50px;
+      overflow: hidden;
+      text-indent: 80%;
+    }
+  }
+
+  a {
+    width: 80px;
+  }
+  a,
+  .fa,
+  input[type="search"] {
+    color: $color__brand;
+  }
+}
+
+//Main navigation menu
+.main-navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 45px;
+  text-transform: uppercase;
+  font-family: Novecento Sans;
+  text-align: center;
+}
+
+
+/*Fixed Header*/
+.new-header{
+  background-color: transparent;
+  position: absolute;
+  transition: ease-in-out;
+  border: none;
+  .tent-logo a h1 {
+      background-image: 
+      url("../../assets/images/inhabitent-logo-tent-white.svg");
+    }
+
+  a,
+  input[type="search"],
+  .fa {
+    color: white;
+  }
+}
+
+/*Back-end User Fixed Header*/
+.logged-in {
+  .site-header{
+    top: 32px;
+  }
+}
+
+

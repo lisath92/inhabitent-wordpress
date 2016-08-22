@@ -1,77 +1,6 @@
 /*--------------------------------------------------------------
-# Content
+# Front Page and Home Page
 --------------------------------------------------------------*/
-/*Fixed Header*/
-.site-header{
-	position: absolute;
-	top: 0px;
-	width: 100%;
-	z-index: 2;
-	transition: ease-in-out;
-	.tent-logo {
-		margin-right: auto;
-
-		a h1 {
-			background: 
-			url("../../assets/images/inhabitent-logo-tent-white.svg")
-			center/50px 50px
-			no-repeat;
-			height: 50px;
-			width: 50px;
-			overflow: hidden;
-			text-indent: 80%;
-		}
-	}
-
-	a {
-		color: white;
-		width: 80px;
-	}
-
-	input[type="search"],
-	.fa {
-		color: white;
-	}
-}
-.main-navigation {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	height: 45px;
-	text-transform: uppercase;
-	font-family: Novecento Sans;
-	text-align: center;
-}
-
-
-.new-header {
-	background-color: rgba(255,255,255,0.7);
-	border-bottom: $border__solid;
-	z-index : 2;
-	color: $color__brand;
-	position: fixed;
-
-	.tent-logo a h1 {
-		background-image: 
-		url("../../assets/images/inhabitent-logo-tent.svg");
-	}
-	a,
-	.fa,
-	input[type="search"] {
-		color: $color__brand;
-	}
-}
-
-
-
-/*Back-end User Fixed Header*/
-.logged-in {
-	.site-header{
-		top: 32px;
-	}
-}
-
-
 /*Front Page*/
 .page-template-page-about,
 .home {
@@ -82,7 +11,7 @@
 	}
 }
 
-/*Blogs Page*/
+/*Home Page*/
 
 //List of blog posts
 .error404,
@@ -181,37 +110,6 @@
 
 
 /*Single Blog Post*/
-.social-media {
-	@include font-uppercase;
-	margin-top: 20px;
-
-	.fa {
-		margin-right: 10px;
-	}
-
-	button{
-		color: $color__brand-purple;
-		background-color: white;
-		border: 1px $color__brand-purple solid;
-		padding: 8px 25px;
-		width: auto;
-
-		&:hover{
-			border: none;
-			color: white;
-			background-color: $color__brand;
-		}
-	}
-}
-
-.entry-footer {
-	@include font-uppercase;
-	margin-top: 20px;
-
-	.cat-links{
-		margin-right: 20px;
-	}
-}
 
 /*Shop Archive*/
 .tax-product-type,
@@ -339,14 +237,6 @@
 	}
 }
 
-/*Blog Archives*/
-.page-title{
-	@include font-uppercase;
-	border-bottom: $border__solid;
-	padding-bottom: 1rem;
-	font-size: 2.5rem;
-	margin:0 0 3rem;
-}
 
 /*About Page*/
 .about-title{
@@ -366,51 +256,6 @@
 		font-size: 2.5rem;
 		text-transform: uppercase;
 	}
-}
-
-/*Footer*/
-.site-footer{
-	clear: both;
-	background:
-	url('../../assets/images/dark-wood2x.png');
-	width:100%;
-	height: 300px;
-
-	.wrapper{
-		display: flex;
-		justify-content: space-between;
-
-		a img{
-			padding-top: 80px;
-			width: 70%;
-		}
-	}
-}	
-
-.site-info {
-	padding-top: 40px;
-	line-height: 1.25;
-	color: white;
-
-	h2 {
-		text-transform: uppercase;
-		font-size: 20px;
-		letter-spacing: 2px;
-		color: $color__brand-orange;
-		font-family: Novecento Sans;
-	}
-
-	.fa{
-		font-size: 20px;
-		padding-right: 5px;
-	}
-}	
-
-.copyright {
-	text-align: center;
-	color: white;
-	text-transform: uppercase;
-	font-family: Novecento Sans;
 }
 
 

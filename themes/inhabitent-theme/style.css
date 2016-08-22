@@ -297,15 +297,49 @@ th {
   font-style: italic; }
 
 /*--------------------------------------------------------------
-# Typography
+# Footer
 --------------------------------------------------------------*/
+.site-footer {
+  clear: both;
+  background: url("../../assets/images/dark-wood2x.png");
+  width: 100%;
+  height: 300px; }
+  .site-footer .wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .site-footer .wrapper a img {
+      padding-top: 80px;
+      width: 70%; }
+
+.site-info {
+  padding-top: 40px;
+  line-height: 1.25;
+  color: white; }
+  .site-info h2 {
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #d99054; }
+  .site-info .fa {
+    font-size: 20px;
+    padding-right: 5px; }
+
+.copyright {
+  text-align: center;
+  color: white;
+  font-family: Novecento Sans;
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 body {
   font-family: Merriweather;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.75;
   color: #404040; }
 
 a {
@@ -536,64 +570,13 @@ input[type="submit"] {
   .widget-area .fa-li {
     padding: 10px 15px 0px 0px; }
   .widget-area .widget_archive ul {
-    line-height: 1.5; }
+    line-height: 1.75; }
   .widget-area .business-hours-items {
     font-weight: bold; }
 
 /*--------------------------------------------------------------
-# Content
+# Front Page and Home Page
 --------------------------------------------------------------*/
-/*Fixed Header*/
-.site-header {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  z-index: 2;
-  transition: ease-in-out; }
-  .site-header .tent-logo {
-    margin-right: auto; }
-    .site-header .tent-logo a h1 {
-      background: url("../../assets/images/inhabitent-logo-tent-white.svg") center/50px 50px no-repeat;
-      height: 50px;
-      width: 50px;
-      overflow: hidden;
-      text-indent: 80%; }
-  .site-header a {
-    color: white;
-    width: 80px; }
-  .site-header input[type="search"],
-  .site-header .fa {
-    color: white; }
-
-.main-navigation {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 45px;
-  text-transform: uppercase;
-  font-family: Novecento Sans;
-  text-align: center; }
-
-.new-header {
-  background-color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid #e1e1e1;
-  z-index: 2;
-  color: #248A83;
-  position: fixed; }
-  .new-header .tent-logo a h1 {
-    background-image: url("../../assets/images/inhabitent-logo-tent.svg"); }
-  .new-header a,
-  .new-header .fa,
-  .new-header input[type="search"] {
-    color: #248A83; }
-
-/*Back-end User Fixed Header*/
-.logged-in .site-header {
-  top: 32px; }
-
 /*Front Page*/
 .page-template-page-about .site-content,
 .home .site-content {
@@ -601,7 +584,7 @@ input[type="submit"] {
   margin: 0;
   padding-top: 0; }
 
-/*Blogs Page*/
+/*Home Page*/
 .error404 .site-content,
 .search .site-content,
 .page-template-page-contact .site-content,
@@ -680,30 +663,6 @@ input[type="submit"] {
     color: white; }
 
 /*Single Blog Post*/
-.social-media {
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  margin-top: 20px; }
-  .social-media .fa {
-    margin-right: 10px; }
-  .social-media button {
-    color: #2f1339;
-    background-color: white;
-    border: 1px #2f1339 solid;
-    padding: 8px 25px;
-    width: auto; }
-    .social-media button:hover {
-      border: none;
-      color: white;
-      background-color: #248A83; }
-
-.entry-footer {
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  margin-top: 20px; }
-  .entry-footer .cat-links {
-    margin-right: 20px; }
-
 /*Shop Archive*/
 .tax-product-type .page-header,
 .post-type-archive .page-header {
@@ -825,15 +784,6 @@ input[type="submit"] {
   .product-full-info p {
     margin: 0; }
 
-/*Blog Archives*/
-.page-title {
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 1rem;
-  font-size: 2.5rem;
-  margin: 0 0 3rem; }
-
 /*About Page*/
 .about-title {
   color: white;
@@ -850,41 +800,6 @@ input[type="submit"] {
     text-align: center;
     font-size: 2.5rem;
     text-transform: uppercase; }
-
-/*Footer*/
-.site-footer {
-  clear: both;
-  background: url("../../assets/images/dark-wood2x.png");
-  width: 100%;
-  height: 300px; }
-  .site-footer .wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .site-footer .wrapper a img {
-      padding-top: 80px;
-      width: 70%; }
-
-.site-info {
-  padding-top: 40px;
-  line-height: 1.25;
-  color: white; }
-  .site-info h2 {
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: #d99054;
-    font-family: Novecento Sans; }
-  .site-info .fa {
-    font-size: 20px;
-    padding-right: 5px; }
-
-.copyright {
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-  font-family: Novecento Sans; }
 
 /*Contact Us*/
 .page-template-page-contact h1 {
@@ -1175,3 +1090,92 @@ input[type="submit"] {
     text-transform: uppercase;
     font-weight: normal;
     margin-top: 0; }
+
+/*--------------------------------------------------------------
+# Blog Posts and Archive Pages
+--------------------------------------------------------------*/
+/*Blog Archives*/
+.page-title {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  margin: 0 0 3rem; }
+
+/*Single Blog Post*/
+.social-media {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  margin-top: 20px; }
+  .social-media .fa {
+    margin-right: 10px; }
+  .social-media button {
+    color: #2f1339;
+    background-color: white;
+    border: 1px #2f1339 solid;
+    padding: 8px 25px;
+    width: auto; }
+    .social-media button:hover {
+      border: none;
+      color: white;
+      background-color: #248A83; }
+
+.entry-footer {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  margin-top: 20px; }
+  .entry-footer .cat-links {
+    margin-right: 20px; }
+
+.site-header {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid #e1e1e1;
+  z-index: 2;
+  color: #248A83;
+  position: fixed;
+  width: 100%;
+  top: 0; }
+  .site-header .tent-logo {
+    margin-right: auto; }
+    .site-header .tent-logo a h1 {
+      background: url("../../assets/images/inhabitent-logo-tent.svg") center/50px 50px no-repeat;
+      height: 50px;
+      width: 50px;
+      overflow: hidden;
+      text-indent: 80%; }
+  .site-header a {
+    width: 80px; }
+  .site-header a,
+  .site-header .fa,
+  .site-header input[type="search"] {
+    color: #248A83; }
+
+.main-navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 45px;
+  text-transform: uppercase;
+  font-family: Novecento Sans;
+  text-align: center; }
+
+/*Fixed Header*/
+.new-header {
+  background-color: transparent;
+  position: absolute;
+  transition: ease-in-out;
+  border: none; }
+  .new-header .tent-logo a h1 {
+    background-image: url("../../assets/images/inhabitent-logo-tent-white.svg"); }
+  .new-header a,
+  .new-header input[type="search"],
+  .new-header .fa {
+    color: white; }
+
+/*Back-end User Fixed Header*/
+.logged-in .site-header {
+  top: 32px; }
