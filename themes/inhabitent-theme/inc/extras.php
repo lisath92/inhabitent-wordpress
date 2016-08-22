@@ -25,8 +25,8 @@ add_filter( 'body_class', 'inhabitent_body_classes' );
 * Remove "Editor" links from sub-menus
 */
 function inhabitent_remove_submenus() {
-    remove_submenu_page( 'themes.php', 'theme-editor.php' );
-    remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
+  remove_submenu_page( 'themes.php', 'theme-editor.php' );
+  remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
@@ -35,36 +35,49 @@ add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 *Customize login logo.
 */
 function inhabitent_login() { ?>
-    <style type="text/css">
+  <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_template_directory_uri().'/assets/images/inhabitent-logo-text-dark.svg'; ?>);
-            background-size: 300px 53px;
-            width: 300px;
-            height: 53px;
-        }
-    </style>
+    background-image: url(<?php echo get_template_directory_uri().'/assets/images/inhabitent-logo-text-dark.svg'; ?>);
+    background-size: 300px 53px;
+    width: 300px;
+    height: 53px;
+  }
+</style>
 <?php }
 add_action( 'login_head', 'inhabitent_login' );
 
+
+//Change login submit button color
+function inhabitent_login_button() { ?>
+  <style type="text/css">
+     #login .button-primary {
+    background: #248A83;
+    border-color: #248A83;
+  }
+</style>
+<?php }
+add_action('login_form', 'inhabitent_login_button');
+
+
 //Change login logo url to inhabitent home url.
 function inhabitent_logo_url() {
-    return home_url();
+  return home_url();
 }
 add_filter( 'login_headerurl', 'inhabitent_logo_url' );
 
 //Change login logo url title
 function inhabitent_url_title() {
-    return 'Inhabitent Supply Co.';
+  return 'Inhabitent Supply Co.';
 }
 add_filter( 'login_headertitle', 'inhabitent_url_title' );
 
 //Adjusting archive page loop for products
 function inhabitent_modify_product_archive($query){
-    if(is_post_type_archive('product') && !is_admin() && $query->is_main_query()){
-        $query->set('posts_per_page', 16);
-        $query->set('order', 'ASC');
-        $query->set('orderby', 'title');
-    }
+  if(is_post_type_archive('product') && !is_admin() && $query->is_main_query()){
+    $query->set('posts_per_page', 16);
+    $query->set('order', 'ASC');
+    $query->set('orderby', 'title');
+  }
 }
 add_action('pre_get_posts', 'inhabitent_modify_product_archive');
 
@@ -73,27 +86,27 @@ function inhabitent_about_inline_styles() {
   if (!is_page_template( 'page-about.php' )) {
     return;
   }
-    $css = '';
-    $logo = CFS()->get('hero_image');
+  $css = '';
+  $logo = CFS()->get('hero_image');
 
-    if(!$logo) {
-      return;
-    }
-            $css .= '
+  if(!$logo) {
+    return;
+  }
+  $css .= '
                 #about-hero { 
-                  background:
-                  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                  url('.$logo.') no-repeat;
-                  height:100vh;
-                  background-position: bottom;
-                  background-size: cover,cover;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-              }';
-        
-    if( !empty( $css ) )
-        wp_add_inline_style( 'inhabitent-style', $css );
+  background:
+  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  url('.$logo.') no-repeat;
+  height:100vh;
+  background-position: bottom;
+  background-size: cover,cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}';
+
+if( !empty( $css ) )
+  wp_add_inline_style( 'inhabitent-style', $css );
 }
 
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_inline_styles' );

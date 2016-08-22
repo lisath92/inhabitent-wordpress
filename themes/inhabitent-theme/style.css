@@ -558,7 +558,7 @@ input[type="submit"] {
 # Widgets
 --------------------------------------------------------------*/
 .widget-area {
-  padding: 55px 0px 0px 55px;
+  padding: 55px 0px 0px 53px;
   width: 30%;
   line-height: 2.5;
   border-left: 1px solid #e1e1e1; }
@@ -635,6 +635,10 @@ input[type="submit"] {
 .search-meta {
   color: black;
   font-size: 1rem; }
+
+/*Log In Page Button*/
+#wp-submit .button-primary {
+  background: #248A83; }
 
 /*--------------------------------------------------------------
 # Comments

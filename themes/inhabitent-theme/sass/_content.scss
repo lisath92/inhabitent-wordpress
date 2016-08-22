@@ -37,7 +37,6 @@
 		@include font-uppercase;
 		font-size: 2rem;
 		color: $color__brand-purple;
-		
 
 	}
 
@@ -65,4 +64,9 @@
 .search-meta {
 	color: black;
 	font-size: 1rem;
+}
+
+/*Log In Page Button*/
+#wp-submit .button-primary {
+	background: $color__brand;
 }
