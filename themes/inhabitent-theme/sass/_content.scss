@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
-# Front Page and Home Page
+# General Page Layouts
 --------------------------------------------------------------*/
-/*Front Page*/
+/*Front Page and About Page*/
 .page-template-page-about,
 .home {
 	.site-content{
@@ -11,9 +11,7 @@
 	}
 }
 
-/*Home Page*/
-
-//List of blog posts
+/*All Pages*/
 .error404,
 .search,
 .page-template-page-contact,	
@@ -21,8 +19,7 @@
 .single,
 .blog {
 	.site-content {
-		display: flex;
-		justify-content: flex-start;
+		@include flex-display(flex-start);
 		flex-wrap: nowrap;
 	}
 
@@ -32,84 +29,6 @@
 	}
 }
 
-
-//Each blog post
-
-.entry-header{
-	position: relative;
-
-	.entry-title{
-		position: absolute;
-		top:0;
-		margin-top: 35px;
-		padding: 15px;
-		background-color: $color__brand;
-		width: 73%;
-		color: white;
-		font-size: 2.3rem;
-		letter-spacing: 2px;
-		line-height: 1;
-		font-weight: bold;
-		@include font-uppercase;
-
-
-		a {
-			color: white;
-			font-weight: bold;
-
-			&:hover {
-				color: $color__brand-lightgray;
-			}
-		}
-	}
-}
-
-.entry-meta {
-	position: absolute;
-	bottom: 6px;
-	background-color: #248a83;
-	font-family: Novecento Sans;
-	text-transform: uppercase;
-	right: 0;
-	padding: 3px 20px;
-	color: white;
-
-	.comments-link a {
-		color: white;
-
-		&:hover {
-			color: $color__brand-lightgray;
-		}
-	}
-}
-
-
-//Read more button
-.read-more-box {
-	margin: 2rem 0px 4.5rem;
-}
-
-.read-more {
-	border: 1px $color__brand-purple solid;
-	text-align: center;
-	width: 140px;
-	line-height: 0;
-	padding: 12px 20px;
-	cursor: pointer;
-	@include font-uppercase;
-	font-size: 14px;
-	color: $color__brand-purple;
-
-
-	&:hover {
-		background-color: $color__brand;
-		border: none;	
-		color: white;
-	}
-}
-
-
-/*Single Blog Post*/
 
 /*Shop Archive*/
 .tax-product-type,
@@ -238,26 +157,6 @@
 }
 
 
-/*About Page*/
-.about-title{
-	color: white;
-	@include font-uppercase;
-	font-size: 3rem;
-	letter-spacing: 2px;
-}
-
-.about-content{
-	width: 60%;
-	padding-bottom: 35px;
-
-	h2 {
-		font-family: Novecento Sans;
-		text-align: center;
-		font-size: 2.5rem;
-		text-transform: uppercase;
-	}
-}
-
 
 /*Contact Us*/
 .page-template-page-contact {
@@ -277,11 +176,20 @@
 }
 
 /*Search Results*/
-.search .entry-header{
+.search {
+	article {
+		width: 100%;
+		height: auto;
+	}
+
+.entry-header{
 	@include font-uppercase;
 	color: $color__brand;
 	font-size: 1.5rem;
 }
+}
+
+
 
 .search-meta {
 	color: black;

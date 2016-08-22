@@ -11,13 +11,14 @@
     margin-right: auto;
     a h1 {
       background: 
-      url("../../assets/images/inhabitent-logo-tent.svg")
-      center/50px 50px
-      no-repeat;
+        url("../../assets/images/inhabitent-logo-tent.svg")
+        center/50px 50px
+        no-repeat;
       height: 50px;
       width: 50px;
       overflow: hidden;
       text-indent: 80%;
+      margin: 0;
     }
   }
 
@@ -28,17 +29,19 @@
   .fa,
   input[type="search"] {
     color: $color__brand;
+
+    &:hover{
+      color: $color__brand-purple;
+    }
   }
 }
 
 //Main navigation menu
 .main-navigation {
-  display: flex;
-  justify-content: flex-end;
+  @include flex-display(flex-end);
+  @include font-uppercase;
   align-items: center;
   height: 45px;
-  text-transform: uppercase;
-  font-family: Novecento Sans;
   text-align: center;
 }
 
@@ -58,6 +61,9 @@
   input[type="search"],
   .fa {
     color: white;
+        &:hover{
+      color: $color__brand-yellow;
+    }
   }
 }
 
