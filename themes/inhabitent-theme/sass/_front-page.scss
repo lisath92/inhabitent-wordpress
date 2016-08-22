@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# Page Templates
+# Front Page
 --------------------------------------------------------------*/
 
 /* Front page */
@@ -10,8 +10,7 @@
   url('../../assets/images/home-hero.jpg')no-repeat;
   height: 100vh;
   background-size: cover, cover;
-  display: flex;
-  justify-content: center;
+  @include flex-display(center);
   align-items: center;
   
   img{
@@ -30,8 +29,7 @@
 }
 
 .shop-categories {
-  display: flex;
-  justify-content: center;
+  @include flex-display(center);
   align-items: center;
   flex: row nowrap;
 
@@ -75,8 +73,7 @@
 
 //Journal
 .inhabitent-journal {
-  display: flex;
-  justify-content: center;
+  @include flex-display(center);
   align-items: flex-start;
   width: 100%;
 
@@ -91,9 +88,9 @@
    height:250px;
  }
 
- img {
-  height: 100%;
-}
+  img {
+    height: 100%;
+  }
 }
 
 .latest-blog-info{
@@ -158,13 +155,16 @@
     img {
       width: 600px;
 
-
     }
+
     h2 a {
       font-size: 1.5rem;
       z-index: -1;
     }
+  }
 
+  .read-more-box {
+    margin: 0;
   }
 }
 

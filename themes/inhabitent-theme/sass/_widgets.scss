@@ -9,16 +9,15 @@
   border-left: $border__solid;
 
   h2{
-    text-transform: uppercase;
+    @include font-uppercase;
     color: $color__brand-purple;
     margin: 0px;
-    font-family: Novecento Sans;
     letter-spacing: 2px;
   }
 
   a:hover {
-      color: $color__brand-purple;
-    }
+    color: $color__brand-purple;
+  }
   
   .fa-li{
     padding: 10px 15px 0px 0px;

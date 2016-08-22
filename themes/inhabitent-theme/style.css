@@ -42,6 +42,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/*-----------------------------------------------------------
+# Error 404 Page
+-------------------------------------------------------------*/
 .error404 .content-area {
   margin-bottom: 2rem; }
   .error404 .content-area ul {
@@ -419,10 +422,10 @@ form .required {
 .comment-form-url {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
   -ms-flex-pack: start;
       justify-content: flex-start;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
   width: 49%; }
   .comment-form-author label,
   .comment-form-email label,
@@ -560,10 +563,10 @@ input[type="submit"] {
   line-height: 2.5;
   border-left: 1px solid #e1e1e1; }
   .widget-area h2 {
+    font-family: Novecento Sans;
     text-transform: uppercase;
     color: #2f1339;
     margin: 0px;
-    font-family: Novecento Sans;
     letter-spacing: 2px; }
   .widget-area a:hover {
     color: #2f1339; }
@@ -575,7 +578,7 @@ input[type="submit"] {
     font-weight: bold; }
 
 /*--------------------------------------------------------------
-# General Page Layouts
+# General Page Layouts, Search and Contact Page
 --------------------------------------------------------------*/
 /*Front Page and About Page*/
 .page-template-page-about .site-content,
@@ -606,127 +609,6 @@ input[type="submit"] {
 .blog .content-area {
   padding: 55px 55px 55px 0px;
   width: 94%; }
-
-/*Shop Archive*/
-.tax-product-type .page-header,
-.post-type-archive .page-header {
-  border-bottom: 1px dashed #c8c8c8;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.tax-product-type .site-content,
-.post-type-archive .site-content {
-  padding-bottom: 80px; }
-
-.tax-product-type h1,
-.post-type-archive h1 {
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  padding-left: 40px;
-  font-size: 2.5rem;
-  margin-bottom: 0; }
-
-.shop-nav {
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  font-size: 1.3rem;
-  text-align: center; }
-  .shop-nav li {
-    text-align: center;
-    margin: 0 1.5rem; }
-  .shop-nav a {
-    width: 1rem; }
-
-.products-grid {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  width: 100%; }
-  .products-grid .product {
-    padding: 10px;
-    width: 23%; }
-  .products-grid .product-description {
-    border: 1px solid #e1e1e1;
-    border-top-width: 5px;
-    text-align: center;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-align: center;
-        align-items: center;
-    padding: 0px 10px; }
-  .products-grid .product-info {
-    font-size: 16px;
-    font-weight: normal;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 10px; }
-    .products-grid .product-info:after {
-      content: "........................ "; }
-  .products-grid .product-image {
-    width: 100%;
-    height: 250px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    overflow: hidden; }
-    .products-grid .product-image a {
-      height: 100%; }
-    .products-grid .product-image img {
-      max-width: none; }
-
-/*Single Products*/
-.single-product .site-main {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: start;
-      align-items: flex-start; }
-
-.product-full-info {
-  width: 57%;
-  margin-left: 3rem; }
-  .product-full-info h1 {
-    font-family: Novecento Sans;
-    text-transform: uppercase;
-    color: #d99054;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    margin: 0 0 15px; }
-  .product-full-info h2 {
-    font-family: Novecento Sans;
-    text-transform: uppercase;
-    font-weight: normal;
-    font-size: 1.7rem;
-    margin-top: 0; }
-  .product-full-info p {
-    margin: 0; }
 
 /*Contact Us*/
 .page-template-page-contact h1 {
@@ -780,7 +662,7 @@ input[type="submit"] {
     font-style: normal; }
 
 .comment-metadata {
-  color: #a1a1a1; }
+  color: #808080; }
 
 .children .comment-body {
   border-top: 1px solid #e1e1e1; }
@@ -795,7 +677,7 @@ input[type="submit"] {
   margin-left: 20px; }
 
 /*--------------------------------------------------------------
-# Page Templates
+# Front Page
 --------------------------------------------------------------*/
 /* Front page */
 .home .hero-image {
@@ -926,6 +808,8 @@ input[type="submit"] {
     .front-page-ads .adventure:nth-child(3) h2 a, .front-page-ads .adventure:last-child h2 a {
       font-size: 1.5rem;
       z-index: -1; }
+  .front-page-ads .adventure .read-more-box {
+    margin: 0; }
 
 .more-adventures {
   margin-bottom: 60px; }
@@ -940,6 +824,9 @@ input[type="submit"] {
     .more-adventures a:hover {
       background-color: #19625d; }
 
+/*--------------------------------------------------------------
+# Adventure Page
+----------------------------------------------------------------*/
 .adventure-header {
   border-bottom: 1px 1px solid #e1e1e1 dashed;
   font-family: Novecento Sans;
@@ -950,10 +837,10 @@ input[type="submit"] {
 
 .adventures-grid {
   margin-top: 50px;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -1060,8 +947,8 @@ input[type="submit"] {
 
 .entry-meta {
   position: absolute;
-  bottom: 6px;
-  background-color: #248a83;
+  bottom: 8px;
+  background-color: #248A83;
   font-family: Novecento Sans;
   text-transform: uppercase;
   right: 0;
@@ -1115,6 +1002,9 @@ input[type="submit"] {
   .entry-footer .cat-links {
     margin-right: 20px; }
 
+/*---------------------------------------------------------
+# Header
+-----------------------------------------------------------*/
 .site-header {
   background-color: rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid #e1e1e1;
@@ -1176,6 +1066,9 @@ input[type="submit"] {
 .logged-in .site-header {
   top: 32px; }
 
+/*------------------------------------------------------
+# About Page
+--------------------------------------------------------*/
 /*About Page*/
 .about-title {
   color: white;
@@ -1193,3 +1086,127 @@ input[type="submit"] {
     font-color: #2f1339;
     text-align: center;
     font-size: 2.5rem; }
+
+/*----------------------------------------------------------------
+# Shop and Product Custom Post Type Page
+------------------------------------------------------------------*/
+/*Shop Archive*/
+.tax-product-type .page-header,
+.post-type-archive .page-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-bottom: 1px dashed #c8c8c8;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.tax-product-type .site-content,
+.post-type-archive .site-content {
+  padding-bottom: 80px; }
+
+.tax-product-type h1,
+.post-type-archive h1 {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  padding-left: 40px;
+  font-size: 2.5rem;
+  margin-bottom: 0; }
+
+.shop-nav {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  font-size: 1.3rem;
+  text-align: center; }
+  .shop-nav li {
+    text-align: center;
+    margin: 0 1.5rem; }
+  .shop-nav a {
+    width: 1rem; }
+
+.products-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%; }
+  .products-grid .product {
+    padding: 10px;
+    width: 23%; }
+  .products-grid .product-description {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    text-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 0px 10px; }
+  .products-grid .product-info {
+    font-size: 16px;
+    font-weight: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px; }
+    .products-grid .product-info:after {
+      content: "........................ "; }
+  .products-grid .product-image {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+    height: 250px;
+    -ms-flex-align: center;
+        align-items: center;
+    overflow: hidden; }
+    .products-grid .product-image a {
+      height: 100%; }
+    .products-grid .product-image img {
+      max-width: none; }
+
+/*Single Products*/
+.single-product .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start; }
+
+.product-full-info {
+  width: 57%;
+  margin-left: 3rem; }
+  .product-full-info h1 {
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    color: #d99054;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 0 0 15px; }
+  .product-full-info h2 {
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.7rem;
+    margin-top: 0; }
+  .product-full-info p {
+    margin: 0; }
