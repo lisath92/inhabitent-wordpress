@@ -21,27 +21,32 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Variables
+# Mixins
 # Normalize
-# Embedded Fonts
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
+# Fonts
+# About
 # Accessibility
-# Alignments
-# Clearings
-# Widgets
+# Adventure
+# Blogs
+# Comments
 # Content
 	## Posts and pages
 	## Asides
 	## Comments
+# Elements
+# Error404
+# Footer
+# Forms
+# Front-page
+# Header
 # Media
 	## Captions
 	## Galleries
-# Page Templates
-	## Front page
+# Modules
+# Navigation
+# Shop
+# Widgets
 --------------------------------------------------------------*/
 
 // Imported but not included in the stylesheet.
@@ -50,22 +55,29 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "mixins";
 
 // CSS included in style.css.
-@import 'media';
-@import 'accessibility';
-@import "error404";
 @import "normalize";
 @import "fonts";
-@import "footer";
-@import "elements";
-@import "forms";
-@import "navigation";
-@import "modules";
-@import "widgets";
-@import "content";
-@import "comments";
-@import "front-page";
-@import "adventure";
-@import "blogs";
-@import "header";
+@import 'media';
 @import "about";
+@import 'accessibility';
+@import 'adventure';
+@import "blogs";
+@import "comments";
+@import "content";
+@import "elements";
+@import "error404";
+@import "footer";
+@import "forms";
+@import "front-page";
+@import "header";
+@import "modules";
+@import "navigation";
 @import "shop";
+@import "widgets";
+
+
+
+
+
+
+
