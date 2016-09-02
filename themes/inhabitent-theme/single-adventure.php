@@ -11,7 +11,7 @@ get_header(); ?>
   <main id="main" class="site-main" role="main">
 
     <?php while ( have_posts() ) : the_post(); ?>
-      <div class="single-adventure-image">
+      <div class="hero-image single-adventure-image">
        <?php if ( has_post_thumbnail() ) : ?>
         <?php the_post_thumbnail( 'full' ); ?>
       <?php endif; ?>

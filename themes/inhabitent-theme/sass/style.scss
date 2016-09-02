@@ -25,24 +25,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Mixins
 # Normalize
 # Fonts
+# Content
+  ## Posts and pages
+  ## Asides
+  ## Comments
+# Media
+  ## Captions
+  ## Galleries
 # About
 # Accessibility
 # Adventure
 # Blogs
 # Comments
-# Content
-	## Posts and pages
-	## Asides
-	## Comments
 # Elements
 # Error404
 # Footer
 # Forms
 # Front-page
 # Header
-# Media
-	## Captions
-	## Galleries
 # Modules
 # Navigation
 # Shop
@@ -57,23 +57,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 // CSS included in style.css.
 @import "normalize";
 @import "fonts";
+@import "header";
+@import "content";
 @import 'media';
 @import "about";
 @import 'accessibility';
 @import 'adventure';
 @import "blogs";
 @import "comments";
-@import "content";
 @import "elements";
 @import "error404";
 @import "footer";
 @import "forms";
 @import "front-page";
-@import "header";
 @import "modules";
 @import "navigation";
 @import "shop";
 @import "widgets";
+
 
 
 

@@ -118,6 +118,12 @@
   @include clearfix;
 }
 
+.front-page-ads {
+  .hentry {
+    margin: 0;
+  }
+}
+
 .front-page-ads .adventure{
   float: left;
   overflow: hidden;

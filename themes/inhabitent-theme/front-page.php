@@ -8,10 +8,11 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-  <section class="hero-image">
+ <main id="main" class="site-main" role="main">
+  <div class="hero-image">
    <img src="<?php echo get_template_directory_uri().'/assets/images/inhabitent-logo-full.svg'?>">
- </section>
- <main id="main" class="wrapper site-main" role="main">
+ </div>
+ <section class="wrapper">
   <section class="shop-stuff">
     <h1>Shop Stuff</h1>
     <div class="shop-categories">
@@ -78,21 +79,22 @@ get_header(); ?>
    $adventures = new WP_Query( $args ); // instantiate our object
    ?>
    <div class="front-page-ads clearfix">
-   <?php if ( $adventures->have_posts() ) : ?>
-     <?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
-    
+     <?php if ( $adventures->have_posts() ) : ?>
+       <?php while ( $adventures->have_posts() ) : $adventures->the_post(); ?>
+        
         <?php get_template_part('template-parts/content-adventure'); ?>
-    
-    <?php endwhile; ?>
-    <?php wp_reset_postdata(); ?>
+        
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
     </div>
 
     <div class="clearfix more-adventures">
-    <a href ="<?php echo get_post_type_archive_link( 'adventure' ); ?>"> More Adventures </a></div>
-  <?php else : ?>
-    <h2>Nothing found!</h2>
-  <?php endif; ?>
-</section>
+      <a href ="<?php echo get_post_type_archive_link( 'adventure' ); ?>"> More Adventures </a></div>
+    <?php else : ?>
+      <h2>Nothing found!</h2>
+    <?php endif; ?>
+  </section>
+</section><!--wrapper-->
 </main><!-- #main -->
 </div><!-- #primary -->
 <?php get_footer(); ?>

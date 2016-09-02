@@ -20,160 +20,33 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Variables
+# Mixins
 # Normalize
-# Embedded Fonts
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
+# Fonts
 # Content
-	## Posts and pages
-	## Asides
-	## Comments
+  ## Posts and pages
+  ## Asides
+  ## Comments
 # Media
-	## Captions
-	## Galleries
-# Page Templates
-	## Front page
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%; }
-
-/* Captions */
-.wp-caption {
-  margin-bottom: 1.5em;
-  max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; }
-  .wp-caption .wp-caption-text {
-    margin: 0.8075em 0; }
-
-.wp-caption-text {
-  text-align: center; }
-
-/* Galleries*/
-.gallery {
-  margin-bottom: 1.5em; }
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.33%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.66%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.28%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.11%; }
-
-.gallery-caption {
-  display: block; }
-
-/*--------------------------------------------------------------
+  ## Captions
+  ## Galleries
+# About
 # Accessibility
+# Adventure
+# Blogs
+# Comments
+# Elements
+# Error404
+# Footer
+# Forms
+# Front-page
+# Header
+# Modules
+# Navigation
+# Shop
+# Widgets
 --------------------------------------------------------------*/
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden; }
-  .screen-reader-text:focus {
-    background-color: #f1f1f1;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 100000;
-    /* Above WP toolbar. */ }
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clearfix {
-  clear: both;
-  content: "";
-  display: table; }
-
-/*-----------------------------------------------------------
-# Error 404 Page
--------------------------------------------------------------*/
-.error404 .content-area {
-  margin-bottom: 2rem; }
-  .error404 .content-area ul {
-    padding: 0;
-    line-height: 1.75; }
-  .error404 .content-area h2 {
-    font-family: Novecento Sans;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    padding-top: 20px; }
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -416,283 +289,68 @@ th {
   font-weight: normal;
   font-style: italic; }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-.site-footer {
-  clear: both;
-  background: url("../../assets/images/dark-wood2x.png");
-  width: 100%;
-  height: 300px; }
-  .site-footer .wrapper {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .site-footer .wrapper a img {
-      padding-top: 80px;
-      width: 70%; }
-
-.site-info {
-  padding-top: 40px;
-  line-height: 1.25;
-  color: white; }
-  .site-info h2 {
-    font-family: Novecento Sans;
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: #d99054; }
-  .site-info .fa {
-    font-size: 20px;
-    padding-right: 5px; }
-
-.copyright {
-  text-align: center;
-  color: white;
-  font-family: Novecento Sans;
-  text-transform: uppercase; }
-
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-body {
-  font-family: Merriweather;
-  font-size: 16px;
-  line-height: 1.75;
-  color: #404040; }
-
-a {
-  text-decoration: none;
-  color: #248A83; }
-  a:hover {
-    color: #2f1339; }
-
-.wrapper {
-  width: 1120px;
-  margin: 0 auto; }
-
-.site-content {
-  padding-top: 45px; }
-
-ul, ol {
-  list-style-type: none; }
-
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
-
-/*--------------------------------------------------------------
-# Inputs and Comment Forms
---------------------------------------------------------------*/
-/*Search Bar*/
-fieldset {
-  border: 0; }
-  fieldset .search-field {
-    display: none;
-    font-family: Novecento Sans;
-    text-transform: uppercase;
-    border: none;
-    background: transparent;
-    color: black; }
-    fieldset .search-field:focus {
-      outline: none; }
-  fieldset .search-submit {
-    background-color: transparent;
-    color: #248A83;
-    border: 0;
-    cursor: pointer; }
-    fieldset .search-submit:focus {
-      outline: none; }
-
-/*Comment Form*/
-form h3 {
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  font-size: 2rem;
-  margin: 20px 0; }
-
-form textarea {
-  width: 765px; }
-
-form label {
-  font-family: Novecento Sans;
-  text-transform: uppercase; }
-
-form input,
-form textarea {
-  background-color: #f4f4f4;
-  border: 1px solid #e1e1e1;
-  margin-top: 10px; }
-
-form input {
-  font-size: 1rem;
-  padding: 7px; }
-
-form .required {
-  color: #d99054; }
-
-.comment-form-author,
-.comment-form-email,
-.comment-form-url {
+/*---------------------------------------------------------
+# Header
+-----------------------------------------------------------*/
+.main-navigation {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
-  width: 49%; }
-  .comment-form-author label,
-  .comment-form-email label,
-  .comment-form-url label {
-    width: 100%;
-    margin-bottom: 8px; }
-  .comment-form-author input,
-  .comment-form-email input,
-  .comment-form-url input {
-    width: 98%;
-    margin-bottom: 10px; }
-
-.comment-form-author {
-  float: left;
-  overflow: hidden; }
-
-.comment-form-email {
-  float: right;
-  overflow: hidden; }
-
-.comment-form-url input {
-  width: 200%; }
-
-input[type="submit"] {
-  background-color: #248A83;
-  color: white;
-  padding: 8px 20px;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   font-family: Novecento Sans;
-  text-transform: uppercase; }
-  input[type="submit"]:hover {
-    background-color: #19625d; }
+  text-transform: uppercase;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 45px;
+  text-align: center; }
 
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/* Menus */
-.main-navigation ul {
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding-left: 0; }
-  .main-navigation ul ul {
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    float: left;
-    position: absolute;
-    top: 1.5em;
-    left: -999em;
-    z-index: 99999; }
-    .main-navigation ul ul ul {
-      left: -999em;
-      top: 0; }
-    .main-navigation ul ul li:hover > ul,
-    .main-navigation ul ul li.focus > ul {
-      left: 100%; }
-    .main-navigation ul ul a {
-      width: 200px; }
-  .main-navigation ul li:hover > ul,
-  .main-navigation ul li.focus > ul {
-    left: auto; }
+/*Fixed Header*/
+.site-header {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid #e1e1e1;
+  z-index: 2;
+  color: #248A83;
+  position: fixed;
+  width: 100%; }
+  .site-header .tent-logo {
+    margin-right: auto; }
+    .site-header .tent-logo a h1 {
+      background: url("../../assets/images/inhabitent-logo-tent.svg") center/50px 50px no-repeat;
+      height: 50px;
+      width: 50px;
+      overflow: hidden;
+      text-indent: 80%;
+      margin: 0; }
+  .site-header a {
+    width: 80px; }
+  .site-header a,
+  .site-header .fa,
+  .site-header input[type="search"] {
+    color: #248A83; }
+    .site-header a:hover,
+    .site-header .fa:hover,
+    .site-header input[type="search"]:hover {
+      color: #2f1339; }
 
-.main-navigation li {
-  float: left;
-  position: relative; }
+.new-header {
+  background-color: transparent;
+  position: absolute;
+  transition: ease-in-out;
+  border: none; }
+  .new-header .tent-logo a h1 {
+    background-image: url("../../assets/images/inhabitent-logo-tent-white.svg"); }
+  .new-header a,
+  .new-header input[type="search"],
+  .new-header .fa {
+    color: white; }
+    .new-header a:hover,
+    .new-header input[type="search"]:hover,
+    .new-header .fa:hover {
+      color: #f0e4d1; }
 
-.main-navigation a {
-  display: block;
-  text-decoration: none; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden; }
-  .screen-reader-text:focus {
-    background-color: #f1f1f1;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 100000;
-    /* Above WP toolbar. */ }
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget-area {
-  padding: 55px 0px 0px 53px;
-  width: 30%;
-  line-height: 2.5;
-  border-left: 1px solid #e1e1e1; }
-  .widget-area h2 {
-    font-family: Novecento Sans;
-    text-transform: uppercase;
-    color: #2f1339;
-    margin: 0px;
-    letter-spacing: 2px; }
-  .widget-area a:hover {
-    color: #2f1339; }
-  .widget-area .fa-li {
-    padding: 10px 15px 0px 0px; }
-  .widget-area .widget_archive ul {
-    line-height: 1.75; }
-  .widget-area .business-hours-items {
-    font-weight: bold; }
+/*Back-end User Fixed Header*/
+.logged-in .site-header {
+  top: 32px; }
 
 /*--------------------------------------------------------------
 # Content, General Page Layouts, Search and Contact Page
@@ -793,6 +451,326 @@ input[type="submit"] {
   background: #248A83; }
 
 /*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/* Captions */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .wp-caption .wp-caption-text {
+    margin: 0.8075em 0; }
+
+.wp-caption-text {
+  text-align: center; }
+
+/* Galleries*/
+.gallery {
+  margin-bottom: 1.5em; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }
+
+/*------------------------------------------------------
+# About Page
+--------------------------------------------------------*/
+/*About Page*/
+.about-title {
+  color: white;
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 2px; }
+
+.about-content {
+  width: 60%;
+  padding-bottom: 35px; }
+  .about-content h2 {
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    font-color: #2f1339;
+    text-align: center;
+    font-size: 2.5rem; }
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clearfix {
+  clear: both;
+  content: "";
+  display: table; }
+
+/*--------------------------------------------------------------
+# Adventure Page
+----------------------------------------------------------------*/
+.adventure-header {
+  border-bottom: 1px 1px solid #e1e1e1 dashed;
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 0px;
+  margin-bottom: 40px; }
+
+.adventures-grid {
+  margin-top: 50px;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .adventures-grid .hentry {
+    margin: 0; }
+
+.adventure {
+  position: relative;
+  width: 47%;
+  height: 550px;
+  padding-right: 25px;
+  padding-bottom: 25px; }
+  .adventure .adventure-img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    overflow: hidden;
+    max-height: 550px;
+    background-color: rgba(0, 0, 0, 0.5); }
+    .adventure .adventure-img img {
+      max-height: none;
+      max-width: 900px;
+      z-index: -1; }
+
+.adventure-info {
+  position: absolute;
+  padding: 30px;
+  top: 0; }
+  .adventure-info h2 a {
+    font-family: Merriweather;
+    color: white;
+    font-weight: normal;
+    font-size: 3rem;
+    margin: 30px 0px; }
+    .adventure-info h2 a:hover {
+      color: #f0e4d1; }
+  .adventure-info .read-more {
+    border-color: white;
+    color: white; }
+
+/*Single Adventure Post*/
+.single-adventure .site-content {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.single-adventure .content-area {
+  width: 100%;
+  padding: 0; }
+
+.single-adventure-image {
+  width: 100%;
+  height: auto; }
+
+.adventure-full-info {
+  width: 60%;
+  margin-bottom: 3rem; }
+  .adventure-full-info .social-media {
+    margin: 20px auto; }
+  .adventure-full-info h1 {
+    text-align: left;
+    border: none;
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    line-height: 1.25; }
+  .adventure-full-info h3 {
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 0; }
+
+/*--------------------------------------------------------------
+# Blog Posts and Archive Pages
+--------------------------------------------------------------*/
+/*Blog Archives*/
+.page-title {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  margin: 0 0 3rem; }
+
+.entry-header {
+  position: relative; }
+  .entry-header .entry-title {
+    position: absolute;
+    top: 0;
+    margin-top: 35px;
+    padding: 15px;
+    background-color: #248A83;
+    width: 73%;
+    color: white;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-weight: bold;
+    font-family: Novecento Sans;
+    text-transform: uppercase; }
+    .entry-header .entry-title a {
+      color: white;
+      font-weight: bold; }
+      .entry-header .entry-title a:hover {
+        color: #f0e4d1; }
+
+.entry-meta {
+  position: absolute;
+  bottom: 8px;
+  background-color: #248A83;
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  right: 0;
+  padding: 3px 20px;
+  color: white; }
+  .entry-meta .comments-link a {
+    color: white; }
+    .entry-meta .comments-link a:hover {
+      color: #f0e4d1; }
+
+.read-more-box {
+  margin: 2rem 0px 4.5rem; }
+
+.read-more {
+  border: 1px #2f1339 solid;
+  text-align: center;
+  width: 140px;
+  line-height: 0;
+  padding: 12px 20px;
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #2f1339; }
+  .read-more:hover {
+    background-color: #248A83;
+    border: none;
+    color: white; }
+
+/*Single Blog Post*/
+.social-media {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  margin-top: 20px; }
+  .social-media .fa {
+    margin-right: 10px; }
+  .social-media button {
+    color: #2f1339;
+    background-color: white;
+    border: 1px #2f1339 solid;
+    padding: 8px 25px;
+    width: auto; }
+    .social-media button:hover {
+      border: none;
+      color: white;
+      background-color: #248A83; }
+
+.entry-footer {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  margin-top: 20px; }
+  .entry-footer .cat-links {
+    margin-right: 20px; }
+
+/*--------------------------------------------------------------
 # Comments
 --------------------------------------------------------------*/
 .comments-area {
@@ -831,6 +809,180 @@ input[type="submit"] {
 
 .comment-content {
   margin-left: 20px; }
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+body {
+  font-family: Merriweather;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #404040; }
+
+a {
+  text-decoration: none;
+  color: #248A83; }
+  a:hover {
+    color: #2f1339; }
+
+.wrapper {
+  width: 1120px;
+  margin: 0 auto; }
+
+.site-content {
+  padding-top: 45px; }
+
+ul, ol {
+  list-style-type: none; }
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */ }
+
+/*-----------------------------------------------------------
+# Error 404 Page
+-------------------------------------------------------------*/
+.error404 .content-area {
+  margin-bottom: 2rem; }
+  .error404 .content-area ul {
+    padding: 0;
+    line-height: 1.75; }
+  .error404 .content-area h2 {
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding-top: 20px; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+  clear: both;
+  background: url("../../assets/images/dark-wood2x.png");
+  width: 100%;
+  height: 300px; }
+  .site-footer .wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .site-footer .wrapper a img {
+      padding-top: 80px;
+      width: 70%; }
+
+.site-info {
+  padding-top: 40px;
+  line-height: 1.25;
+  color: white; }
+  .site-info h2 {
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #d99054; }
+  .site-info .fa {
+    font-size: 20px;
+    padding-right: 5px; }
+
+.copyright {
+  text-align: center;
+  color: white;
+  font-family: Novecento Sans;
+  text-transform: uppercase; }
+
+/*--------------------------------------------------------------
+# Inputs and Comment Forms
+--------------------------------------------------------------*/
+/*Search Bar*/
+fieldset {
+  border: 0; }
+  fieldset .search-field {
+    display: none;
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    border: none;
+    background: transparent;
+    color: black; }
+    fieldset .search-field:focus {
+      outline: none; }
+  fieldset .search-submit {
+    background-color: transparent;
+    color: #248A83;
+    border: 0;
+    cursor: pointer; }
+    fieldset .search-submit:focus {
+      outline: none; }
+
+/*Comment Form*/
+form h3 {
+  font-family: Novecento Sans;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 20px 0; }
+
+form textarea {
+  width: 765px; }
+
+form label {
+  font-family: Novecento Sans;
+  text-transform: uppercase; }
+
+form input,
+form textarea {
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  margin-top: 10px; }
+
+form input {
+  font-size: 1rem;
+  padding: 7px; }
+
+form .required {
+  color: #d99054; }
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  width: 49%; }
+  .comment-form-author label,
+  .comment-form-email label,
+  .comment-form-url label {
+    width: 100%;
+    margin-bottom: 8px; }
+  .comment-form-author input,
+  .comment-form-email input,
+  .comment-form-url input {
+    width: 98%;
+    margin-bottom: 10px; }
+
+.comment-form-author {
+  float: left;
+  overflow: hidden; }
+
+.comment-form-email {
+  float: right;
+  overflow: hidden; }
+
+.comment-form-url input {
+  width: 200%; }
+
+input[type="submit"] {
+  background-color: #248A83;
+  color: white;
+  padding: 8px 20px;
+  font-family: Novecento Sans;
+  text-transform: uppercase; }
+  input[type="submit"]:hover {
+    background-color: #19625d; }
 
 /*--------------------------------------------------------------
 # Front Page
@@ -938,6 +1090,9 @@ input[type="submit"] {
   height: 0;
   overflow: hidden; }
 
+.front-page-ads .hentry {
+  margin: 0; }
+
 .front-page-ads .adventure {
   float: left;
   overflow: hidden; }
@@ -981,267 +1136,100 @@ input[type="submit"] {
       background-color: #19625d; }
 
 /*--------------------------------------------------------------
-# Adventure Page
-----------------------------------------------------------------*/
-.adventure-header {
-  border-bottom: 1px 1px solid #e1e1e1 dashed;
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 30px 0px;
-  margin-bottom: 40px; }
-
-.adventures-grid {
-  margin-top: 50px;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.adventure {
-  position: relative;
-  width: 47%;
-  height: 550px;
-  padding-right: 25px;
-  padding-bottom: 25px; }
-  .adventure .adventure-img {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    overflow: hidden;
-    max-height: 550px;
-    background-color: rgba(0, 0, 0, 0.5); }
-    .adventure .adventure-img img {
-      max-height: none;
-      max-width: 900px;
-      z-index: -1; }
-
-.adventure-info {
-  position: absolute;
-  padding: 30px;
-  top: 0; }
-  .adventure-info h2 a {
-    font-family: Merriweather;
-    color: white;
-    font-weight: normal;
-    font-size: 3rem;
-    margin: 30px 0px; }
-    .adventure-info h2 a:hover {
-      color: #f0e4d1; }
-  .adventure-info .read-more {
-    border-color: white;
-    color: white; }
-
-/*Single Adventure Post*/
-.single-adventure .site-content {
-  width: 100%;
-  margin: 0;
-  padding: 0; }
-
-.single-adventure .content-area {
-  width: 100%;
-  padding: 0; }
-
-.single-adventure-image {
-  width: 100%;
-  height: auto; }
-
-.adventure-full-info {
-  width: 60%;
-  margin-bottom: 3rem; }
-  .adventure-full-info h1 {
-    text-align: left;
-    border: none;
-    margin: 0;
-    font-size: 2.5rem;
-    letter-spacing: 3px;
-    line-height: 1.25; }
-  .adventure-full-info h3 {
-    font-family: Novecento Sans;
-    text-transform: uppercase;
-    font-weight: normal;
-    margin-top: 0; }
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
 
 /*--------------------------------------------------------------
-# Blog Posts and Archive Pages
+# Navigation
 --------------------------------------------------------------*/
-/*Blog Archives*/
-.page-title {
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 1rem;
-  font-size: 2.5rem;
-  margin: 0 0 3rem; }
-
-.entry-header {
-  position: relative; }
-  .entry-header .entry-title {
+/* Menus */
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  .main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    float: left;
     position: absolute;
-    top: 0;
-    margin-top: 35px;
-    padding: 15px;
-    background-color: #248A83;
-    width: 73%;
-    color: white;
-    font-size: 2.3rem;
-    letter-spacing: 2px;
-    line-height: 1;
-    font-weight: bold;
-    font-family: Novecento Sans;
-    text-transform: uppercase; }
-    .entry-header .entry-title a {
-      color: white;
-      font-weight: bold; }
-      .entry-header .entry-title a:hover {
-        color: #f0e4d1; }
+    top: 1.5em;
+    left: -999em;
+    z-index: 99999; }
+    .main-navigation ul ul ul {
+      left: -999em;
+      top: 0; }
+    .main-navigation ul ul li:hover > ul,
+    .main-navigation ul ul li.focus > ul {
+      left: 100%; }
+    .main-navigation ul ul a {
+      width: 200px; }
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    left: auto; }
 
-.entry-meta {
-  position: absolute;
-  bottom: 8px;
-  background-color: #248A83;
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  right: 0;
-  padding: 3px 20px;
-  color: white; }
-  .entry-meta .comments-link a {
-    color: white; }
-    .entry-meta .comments-link a:hover {
-      color: #f0e4d1; }
+.main-navigation li {
+  float: left;
+  position: relative; }
 
-.read-more-box {
-  margin: 2rem 0px 4.5rem; }
+.main-navigation a {
+  display: block;
+  text-decoration: none; }
 
-.read-more {
-  border: 1px #2f1339 solid;
-  text-align: center;
-  width: 140px;
-  line-height: 0;
-  padding: 12px 20px;
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #2f1339; }
-  .read-more:hover {
-    background-color: #248A83;
-    border: none;
-    color: white; }
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block; }
 
-/*Single Blog Post*/
-.social-media {
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  margin-top: 20px; }
-  .social-media .fa {
-    margin-right: 10px; }
-  .social-media button {
-    color: #2f1339;
-    background-color: white;
-    border: 1px #2f1339 solid;
-    padding: 8px 25px;
-    width: auto; }
-    .social-media button:hover {
-      border: none;
-      color: white;
-      background-color: #248A83; }
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none; }
+  .main-navigation ul {
+    display: block; } }
 
-.entry-footer {
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  margin-top: 20px; }
-  .entry-footer .cat-links {
-    margin-right: 20px; }
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden; }
 
-/*---------------------------------------------------------
-# Header
------------------------------------------------------------*/
-.site-header {
-  background-color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid #e1e1e1;
-  z-index: 2;
-  color: #248A83;
-  position: fixed;
-  width: 100%;
-  top: 0; }
-  .site-header .tent-logo {
-    margin-right: auto; }
-    .site-header .tent-logo a h1 {
-      background: url("../../assets/images/inhabitent-logo-tent.svg") center/50px 50px no-repeat;
-      height: 50px;
-      width: 50px;
-      overflow: hidden;
-      text-indent: 80%;
-      margin: 0; }
-  .site-header a {
-    width: 80px; }
-  .site-header a,
-  .site-header .fa,
-  .site-header input[type="search"] {
-    color: #248A83; }
-    .site-header a:hover,
-    .site-header .fa:hover,
-    .site-header input[type="search"]:hover {
-      color: #2f1339; }
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%; }
 
-.main-navigation {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 45px;
-  text-align: center; }
-
-/*Fixed Header*/
-.new-header {
-  background-color: transparent;
-  position: absolute;
-  transition: ease-in-out;
-  border: none; }
-  .new-header .tent-logo a h1 {
-    background-image: url("../../assets/images/inhabitent-logo-tent-white.svg"); }
-  .new-header a,
-  .new-header input[type="search"],
-  .new-header .fa {
-    color: white; }
-    .new-header a:hover,
-    .new-header input[type="search"]:hover,
-    .new-header .fa:hover {
-      color: #f0e4d1; }
-
-/*Back-end User Fixed Header*/
-.logged-in .site-header {
-  top: 32px; }
-
-/*------------------------------------------------------
-# About Page
---------------------------------------------------------*/
-/*About Page*/
-.about-title {
-  color: white;
-  font-family: Novecento Sans;
-  text-transform: uppercase;
-  font-size: 3rem;
-  letter-spacing: 2px; }
-
-.about-content {
-  width: 60%;
-  padding-bottom: 35px; }
-  .about-content h2 {
-    font-family: Novecento Sans;
-    text-transform: uppercase;
-    font-color: #2f1339;
-    text-align: center;
-    font-size: 2.5rem; }
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
 
 /*----------------------------------------------------------------
 # Shop and Product Custom Post Type Page
@@ -1366,3 +1354,26 @@ input[type="submit"] {
     margin-top: 0; }
   .product-full-info p {
     margin: 0; }
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget-area {
+  padding: 55px 0px 0px 53px;
+  width: 30%;
+  line-height: 2.5;
+  border-left: 1px solid #e1e1e1; }
+  .widget-area h2 {
+    font-family: Novecento Sans;
+    text-transform: uppercase;
+    color: #2f1339;
+    margin: 0px;
+    letter-spacing: 2px; }
+  .widget-area a:hover {
+    color: #2f1339; }
+  .widget-area .fa-li {
+    padding: 10px 15px 0px 0px; }
+  .widget-area .widget_archive ul {
+    line-height: 1.75; }
+  .widget-area .business-hours-items {
+    font-weight: bold; }
