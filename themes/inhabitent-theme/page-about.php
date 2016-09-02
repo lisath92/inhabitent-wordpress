@@ -19,6 +19,4 @@ get_header(); ?>
         <?php echo CFS()->get('content') ?></div>
     </main><!-- #main -->
   </div><!-- #primary -->
-
-<!-- <?//php get_sidebar(); ?> -->
 <?php get_footer(); ?>
