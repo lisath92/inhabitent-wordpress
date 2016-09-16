@@ -19,7 +19,6 @@
   color: $color__brand;
   position: fixed;
   width: 100%;
-  // top: 0;
 
   .tent-logo {
     margin-right: auto;
@@ -57,18 +56,11 @@
   transition: ease-in-out;
   border: none;
   .tent-logo {
-    // margin-right: auto;
+
     a h1 {
       
       background-image: 
       url("../../assets/images/inhabitent-logo-tent-white.svg");
-        // center/50px 50px
-        // no-repeat;
-      // height: 50px;
-      // width: 50px;
-      // overflow: hidden;
-      // text-indent: 80%;
-      // margin: 0;;
     }
 }
   a,
